@@ -110,7 +110,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RAINBOW_ROSE);
         addDrop(ModBlocks.POTTED_RAINBOW_ROSE, pottedPlantDrops(ModBlocks.RAINBOW_ROSE));
 
-        addDrop(ModBlocks.REGEN_PAD);
+        addDrop(ModBlocks.VISION_PAD);
     }
 
 }

@@ -80,7 +80,7 @@ public class ModModelProvider extends FabricModelProvider {
                 BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REGEN_PAD);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VISION_PAD);
 
     }
 

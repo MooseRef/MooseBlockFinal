@@ -209,8 +209,8 @@ public class ModBlocks {
     public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
             new TomatoCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)), ModItemGroups.MOOSITE);
 
-    public static final Block REGEN_PAD = registerBlock("regen_pad",
-            new RegenPadBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f,4.0f)), ModItemGroups.MOOSITE);
+    public static final Block VISION_PAD = registerBlock("vision_pad",
+            new NightVisionBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f,4.0f)), ModItemGroups.MOOSITE);
 
 
     private static Block registerBlockWithoutItem(String name, Block block, ItemGroup group) {

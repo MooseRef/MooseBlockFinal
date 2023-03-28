@@ -12,8 +12,8 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.moose.mooseblock.particle.ModParticles;
 
-public class RegenPadBlock extends Block {
-    public RegenPadBlock(Settings settings) {
+public class NightVisionBlock extends Block {
+    public NightVisionBlock(Settings settings) {
         super(settings);
     }
 
@@ -43,7 +43,7 @@ public class RegenPadBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 50, 0, true, false ));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 420, 0, true, false ));
         }
 
 
