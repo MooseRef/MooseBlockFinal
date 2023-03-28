@@ -39,7 +39,16 @@
   "item.mooseblock.tomato" : "Tomato",
   "item.mooseblock.tomato_soup" : "Tomato Soup",
 
+  "item.mooseblock.dice_cube" : "Dice Cube",
+  "item.mooseblock.dice_dodecahedron" : "Dice Dodecahedron",
   "item.mooseblock.dice_icosahedron" : "Dice Icosahedron",
+
+  "roll.outcome": "Your roll is...",
+  "roll.tooltip": "Press Shift for more info!",
+  "roll.sixtooltip": "Right Click to Roll a D6",
+  "roll.twelvetooltip": "Right Click to Roll a D12",
+  "roll.twentytooltip": "Right Click to Roll a D20",
+
 
   "item.mooseblock.glue_bucket": "Glue Bucket",
 
@@ -57,6 +66,7 @@
   "block.mooseblock.mood_pressure_plate": "Mood Pressure Plate",
   "block.mooseblock.mood_door": "Mood Door",
   "block.mooseblock.mood_trapdoor": "Mood Trapdoor",
+  "block.mooseblock.mood_redstone_lamp": "Mood Redstone Lamp",
 
   "block.mooseblock.satin_log": "Satin Log",
   "block.mooseblock.satin_wood": "Satin Wood",
@@ -122,16 +132,14 @@
   "block.mooseblock.rainbow_rose": "Rainbow Rose",
   "block.mooseblock.potted_rainbow_rose": "Potted Rainbow Rose",
 
-  "block.mooseblock.regen_pad": "Regen Pad",
+  "block.mooseblock.vision_pad": "Vision Pad",
 
   "enchantment.mooseblock.frost": "Frost",
 
-  "itemgroup.moosite": "Moosium",
+  "itemgroup.moosite": "Moosium"
 
 
 
-  "roll.outcome": "Your roll is...",
-  "roll.tooltip": "Press Shift for more info!",
-  "roll.twentytooltip": "Right Click to Roll a D20"
+
 
 }

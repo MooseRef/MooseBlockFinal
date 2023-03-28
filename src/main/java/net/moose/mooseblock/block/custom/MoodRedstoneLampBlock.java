@@ -35,4 +35,6 @@ public class MoodRedstoneLampBlock extends Block {
         builder.add(LIT);
     }
 
+
+
 }

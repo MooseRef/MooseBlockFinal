@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "mooseblock:goxite"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XRX",
+    "XXX"
+  ],
+  "result": {
+    "item": "mooseblock:dice_icosahedron"
+  }
+}

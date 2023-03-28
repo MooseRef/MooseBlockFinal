@@ -477,5 +477,32 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.BORPITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.BORPITE_PICKAXE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DICE_CUBE)
+                .pattern(" X ")
+                .pattern("XRX")
+                .pattern(" X ")
+                .input('X',ModItems.MOOSITE)
+                .input('R', Items.REDSTONE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.MOOSITE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.MOOSITE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DICE_CUBE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DICE_DODECAHEDRON)
+                .pattern(" XX")
+                .pattern("XRX")
+                .pattern("XX ")
+                .input('X',ModItems.BORPITE)
+                .input('R', Items.REDSTONE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.BORPITE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.BORPITE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DICE_DODECAHEDRON)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DICE_ICOSAHEDRON)
+                .pattern("XXX")
+                .pattern("XRX")
+                .pattern("XXX")
+                .input('X',ModItems.GOXITE)
+                .input('R', Items.REDSTONE)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.GOXITE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.GOXITE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DICE_ICOSAHEDRON)));
                     }
 }

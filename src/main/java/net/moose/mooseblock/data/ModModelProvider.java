@@ -126,6 +126,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO_SOUP, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.DICE_CUBE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DICE_DODECAHEDRON, Models.GENERATED);
         itemModelGenerator.register(ModItems.DICE_ICOSAHEDRON, Models.GENERATED);
 
 

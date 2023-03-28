@@ -8,6 +8,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.item.custom.DiceCubeItem;
+import net.moose.mooseblock.item.custom.DiceDodecahedronItem;
 import net.moose.mooseblock.item.custom.DiceIcosahedronItem;
 import net.moose.mooseblock.mooseblock;
 
@@ -54,6 +56,8 @@ public class ModItems {
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).build())));
     public static final Item TOMATO_SOUP = registerItem("tomato_soup", new StewItem(new FabricItemSettings().food(new FoodComponent.Builder().hunger(12).saturationModifier(1f).build()).maxCount(1)));
 
+    public static final Item DICE_CUBE = registerItem("dice_cube", new DiceCubeItem(new FabricItemSettings().maxCount(1)));
+    public static final Item DICE_DODECAHEDRON = registerItem("dice_dodecahedron", new DiceDodecahedronItem(new FabricItemSettings().maxCount(1)));
     public static final Item DICE_ICOSAHEDRON = registerItem("dice_icosahedron", new DiceIcosahedronItem(new FabricItemSettings().maxCount(1)));
 
        public static void addItemsToItemGroup() {
@@ -100,7 +104,10 @@ public class ModItems {
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO);
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO_SOUP);
 
+        addToItemGroup(ModItemGroups.MOOSITE, DICE_CUBE);
+        addToItemGroup(ModItemGroups.MOOSITE, DICE_DODECAHEDRON);
         addToItemGroup(ModItemGroups.MOOSITE, DICE_ICOSAHEDRON);
+
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(mooseblock.MOD_ID, name), item);
