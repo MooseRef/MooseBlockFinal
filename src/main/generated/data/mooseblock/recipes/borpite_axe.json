@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_axe"
-  }
+  },
+  "show_notification": true
 }

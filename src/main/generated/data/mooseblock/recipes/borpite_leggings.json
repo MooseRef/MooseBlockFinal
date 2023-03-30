@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_leggings"
-  }
+  },
+  "show_notification": true
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.ModelIds;
 import net.minecraft.data.client.Models;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.item.ModItems;
@@ -81,6 +82,10 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VISION_PAD);
+
+        blockStateModelGenerator.registerParentedItemModel(ModItems.RED_PANDA_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(ModItems.RACCOON_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+        blockStateModelGenerator.registerParentedItemModel(ModItems.MOOSE_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
 
     }
 

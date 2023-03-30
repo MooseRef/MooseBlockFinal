@@ -5,9 +5,14 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.entity.ModEntities;
+import net.moose.mooseblock.entity.client.MooseRenderer;
+import net.moose.mooseblock.entity.client.RaccoonRenderer;
+import net.moose.mooseblock.entity.client.RedPandaRenderer;
 import net.moose.mooseblock.fluid.ModFluids;
 import net.moose.mooseblock.particle.ModParticles;
 import net.moose.mooseblock.particle.custom.GlitterParticle;
@@ -18,6 +23,10 @@ public class mooseblockclient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOOD_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOOD_TRAPDOOR, RenderLayer.getCutout());
+
+        EntityRendererRegistry.register(ModEntities.RED_PANDA, RedPandaRenderer::new);
+        EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
+        EntityRendererRegistry.register(ModEntities.MOOSE, MooseRenderer::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLACK_ROSE, RenderLayer.getCutout());

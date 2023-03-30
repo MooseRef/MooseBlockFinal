@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:goxite_axe"
-  }
+  },
+  "show_notification": true
 }

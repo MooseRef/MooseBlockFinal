@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:dice_dodecahedron"
-  }
+  },
+  "show_notification": true
 }

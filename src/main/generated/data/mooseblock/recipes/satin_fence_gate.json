@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:satin_fence_gate"
-  }
+  },
+  "show_notification": true
 }

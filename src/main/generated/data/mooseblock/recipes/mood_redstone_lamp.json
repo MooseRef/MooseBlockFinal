@@ -19,5 +19,6 @@
   ],
   "result": {
     "item": "mooseblock:mood_redstone_lamp"
-  }
+  },
+  "show_notification": true
 }

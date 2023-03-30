@@ -37,5 +37,6 @@
   ],
   "result": {
     "item": "mooseblock:rainbow_rose"
-  }
+  },
+  "show_notification": true
 }

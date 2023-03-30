@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:stripped_satin_wood"
-  }
+  },
+  "show_notification": true
 }

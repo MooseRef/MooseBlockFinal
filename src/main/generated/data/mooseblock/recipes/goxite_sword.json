@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:goxite_sword"
-  }
+  },
+  "show_notification": true
 }

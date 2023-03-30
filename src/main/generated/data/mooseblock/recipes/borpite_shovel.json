@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_shovel"
-  }
+  },
+  "show_notification": true
 }

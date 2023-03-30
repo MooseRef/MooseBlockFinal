@@ -2,12 +2,12 @@ package net.moose.mooseblock.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.entity.ModEntities;
 import net.moose.mooseblock.item.custom.DiceCubeItem;
 import net.moose.mooseblock.item.custom.DiceDodecahedronItem;
 import net.moose.mooseblock.item.custom.DiceIcosahedronItem;
@@ -22,30 +22,30 @@ public class ModItems {
 
     public static final Item MOOSITE = registerItem("moosite", new Item(new FabricItemSettings().fireproof()));
 
-    public static final Item GOXITE_HELMET = registerItem("goxite_helmet", new ArmorItem(ModArmorMaterial.GOXITE, EquipmentSlot.HEAD, new FabricItemSettings()));
-    public static final Item GOXITE_CHESTPLATE = registerItem("goxite_chestplate", new ArmorItem(ModArmorMaterial.GOXITE, EquipmentSlot.CHEST, new FabricItemSettings()));
-    public static final Item GOXITE_LEGGINGS = registerItem("goxite_leggings", new ArmorItem(ModArmorMaterial.GOXITE, EquipmentSlot.LEGS, new FabricItemSettings()));
-    public static final Item GOXITE_BOOTS = registerItem("goxite_boots", new ArmorItem(ModArmorMaterial.GOXITE, EquipmentSlot.FEET, new FabricItemSettings()));
+    public static final Item GOXITE_HELMET = registerItem("goxite_helmet", new ArmorItem(ModArmorMaterial.GOXITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item GOXITE_CHESTPLATE = registerItem("goxite_chestplate", new ArmorItem(ModArmorMaterial.GOXITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item GOXITE_LEGGINGS = registerItem("goxite_leggings", new ArmorItem(ModArmorMaterial.GOXITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item GOXITE_BOOTS = registerItem("goxite_boots", new ArmorItem(ModArmorMaterial.GOXITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item GOXITE_SWORD = registerItem("goxite_sword", new SwordItem(ModToolMaterial.GOXITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item GOXITE_SHOVEL = registerItem("goxite_shovel", new ModShovelItem(ModToolMaterial.GOXITE,2.0f, -3.0f,new FabricItemSettings()));
     public static final Item GOXITE_PICKAXE = registerItem("goxite_pickaxe", new ModPickaxeItem(ModToolMaterial.GOXITE, 1, -2.8f, new FabricItemSettings()));
     public static final Item GOXITE_AXE = registerItem("goxite_axe", new ModAxeItem(ModToolMaterial.GOXITE, 5.0f, -3.0f, new FabricItemSettings()));
     public static final Item GOXITE_HOE = registerItem("goxite_hoe", new ModHoeItem(ModToolMaterial.GOXITE, -3, 0.0f, new FabricItemSettings()));
 
-    public static final Item BORPITE_HELMET = registerItem("borpite_helmet", new ArmorItem(ModArmorMaterial.BORPITE, EquipmentSlot.HEAD, new FabricItemSettings()));
-    public static final Item BORPITE_CHESTPLATE = registerItem("borpite_chestplate", new ArmorItem(ModArmorMaterial.BORPITE, EquipmentSlot.CHEST, new FabricItemSettings()));
-    public static final Item BORPITE_LEGGINGS = registerItem("borpite_leggings", new ArmorItem(ModArmorMaterial.BORPITE, EquipmentSlot.LEGS, new FabricItemSettings()));
-    public static final Item BORPITE_BOOTS = registerItem("borpite_boots", new ArmorItem(ModArmorMaterial.BORPITE, EquipmentSlot.FEET, new FabricItemSettings()));
+    public static final Item BORPITE_HELMET = registerItem("borpite_helmet", new ArmorItem(ModArmorMaterial.BORPITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BORPITE_CHESTPLATE = registerItem("borpite_chestplate", new ArmorItem(ModArmorMaterial.BORPITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BORPITE_LEGGINGS = registerItem("borpite_leggings", new ArmorItem(ModArmorMaterial.BORPITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BORPITE_BOOTS = registerItem("borpite_boots", new ArmorItem(ModArmorMaterial.BORPITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item BORPITE_SWORD = registerItem("borpite_sword", new SwordItem(ModToolMaterial.BORPITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item BORPITE_SHOVEL = registerItem("borpite_shovel", new ModShovelItem(ModToolMaterial.BORPITE,2.0f, -3.0f,new FabricItemSettings()));
     public static final Item BORPITE_PICKAXE = registerItem("borpite_pickaxe", new ModPickaxeItem(ModToolMaterial.BORPITE, 1, -2.8f, new FabricItemSettings()));
     public static final Item BORPITE_AXE = registerItem("borpite_axe", new ModAxeItem(ModToolMaterial.BORPITE, 5.0f, -3.0f, new FabricItemSettings()));
     public static final Item BORPITE_HOE = registerItem("borpite_hoe", new ModHoeItem(ModToolMaterial.BORPITE, -3, 0.0f, new FabricItemSettings()));
 
-    public static final Item MOOSITE_HELMET = registerItem("moosite_helmet", new ArmorItem(ModArmorMaterial.MOOSITE, EquipmentSlot.HEAD, new FabricItemSettings().fireproof()));
-    public static final Item MOOSITE_CHESTPLATE = registerItem("moosite_chestplate", new ArmorItem(ModArmorMaterial.MOOSITE, EquipmentSlot.CHEST, new FabricItemSettings().fireproof()));
-    public static final Item MOOSITE_LEGGINGS = registerItem("moosite_leggings", new ArmorItem(ModArmorMaterial.MOOSITE, EquipmentSlot.LEGS, new FabricItemSettings().fireproof()));
-    public static final Item MOOSITE_BOOTS = registerItem("moosite_boots", new ArmorItem(ModArmorMaterial.MOOSITE, EquipmentSlot.FEET, new FabricItemSettings().fireproof()));
+    public static final Item MOOSITE_HELMET = registerItem("moosite_helmet", new ArmorItem(ModArmorMaterial.MOOSITE, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+    public static final Item MOOSITE_CHESTPLATE = registerItem("moosite_chestplate", new ArmorItem(ModArmorMaterial.MOOSITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
+    public static final Item MOOSITE_LEGGINGS = registerItem("moosite_leggings", new ArmorItem(ModArmorMaterial.MOOSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
+    public static final Item MOOSITE_BOOTS = registerItem("moosite_boots", new ArmorItem(ModArmorMaterial.MOOSITE, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
     public static final Item MOOSITE_SWORD = registerItem("moosite_sword", new SwordItem(ModToolMaterial.MOOSITE, 3, -2.4f, new FabricItemSettings().fireproof()));
     public static final Item MOOSITE_SHOVEL = registerItem("moosite_shovel", new ModShovelItem(ModToolMaterial.MOOSITE,2.0f, -3.0f,new FabricItemSettings().fireproof()));
     public static final Item MOOSITE_PICKAXE = registerItem("moosite_pickaxe", new ModPickaxeItem(ModToolMaterial.MOOSITE, 1, -2.8f, new FabricItemSettings().fireproof()));
@@ -60,7 +60,17 @@ public class ModItems {
     public static final Item DICE_DODECAHEDRON = registerItem("dice_dodecahedron", new DiceDodecahedronItem(new FabricItemSettings().maxCount(1)));
     public static final Item DICE_ICOSAHEDRON = registerItem("dice_icosahedron", new DiceIcosahedronItem(new FabricItemSettings().maxCount(1)));
 
-       public static void addItemsToItemGroup() {
+    public static final Item RED_PANDA_SPAWN_EGG = registerItem("red_panda_spawn_egg",
+            new SpawnEggItem(ModEntities.RED_PANDA, 0xE86220, 0x2B231F,
+            new FabricItemSettings()));
+    public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",
+            new SpawnEggItem(ModEntities.RACCOON, 0x444241, 0xBFB9B7,
+                    new FabricItemSettings()));
+    public static final Item MOOSE_SPAWN_EGG = registerItem("moose_spawn_egg",
+            new SpawnEggItem(ModEntities.MOOSE, 0x712E0C, 0xC99870,
+                    new FabricItemSettings()));
+
+    public static void addItemsToItemGroup() {
 
         // ADD TO THE ABOVE ITEMS????
 
@@ -107,6 +117,11 @@ public class ModItems {
         addToItemGroup(ModItemGroups.MOOSITE, DICE_CUBE);
         addToItemGroup(ModItemGroups.MOOSITE, DICE_DODECAHEDRON);
         addToItemGroup(ModItemGroups.MOOSITE, DICE_ICOSAHEDRON);
+
+        addToItemGroup(ModItemGroups.MOOSITE, RED_PANDA_SPAWN_EGG);
+        addToItemGroup(ModItemGroups.MOOSITE, RACCOON_SPAWN_EGG);
+        addToItemGroup(ModItemGroups.MOOSITE, MOOSE_SPAWN_EGG);
+
 
     }
     private static Item registerItem(String name, Item item) {

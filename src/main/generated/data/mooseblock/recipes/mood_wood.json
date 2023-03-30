@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:mood_wood"
-  }
+  },
+  "show_notification": true
 }

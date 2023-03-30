@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:goxite_leggings"
-  }
+  },
+  "show_notification": true
 }

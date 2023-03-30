@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:goxite_boots"
-  }
+  },
+  "show_notification": true
 }

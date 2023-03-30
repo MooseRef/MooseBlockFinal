@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_helmet"
-  }
+  },
+  "show_notification": true
 }

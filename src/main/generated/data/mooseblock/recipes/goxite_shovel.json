@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:goxite_shovel"
-  }
+  },
+  "show_notification": true
 }

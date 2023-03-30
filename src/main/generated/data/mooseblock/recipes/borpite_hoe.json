@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_hoe"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:block_of_raw_borpite"
-  }
+  },
+  "show_notification": true
 }

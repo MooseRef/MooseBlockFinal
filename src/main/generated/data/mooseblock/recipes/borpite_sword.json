@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_sword"
-  }
+  },
+  "show_notification": true
 }

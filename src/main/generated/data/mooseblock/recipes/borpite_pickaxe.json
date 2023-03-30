@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_pickaxe"
-  }
+  },
+  "show_notification": true
 }

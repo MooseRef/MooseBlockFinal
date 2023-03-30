@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:satin_pressure_plate"
-  }
+  },
+  "show_notification": true
 }

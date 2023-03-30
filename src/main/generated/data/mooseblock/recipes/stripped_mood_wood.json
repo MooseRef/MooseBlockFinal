@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:stripped_mood_wood"
-  }
+  },
+  "show_notification": true
 }

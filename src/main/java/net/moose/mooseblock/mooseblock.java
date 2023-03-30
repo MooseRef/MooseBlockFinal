@@ -2,10 +2,15 @@ package net.moose.mooseblock;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.block.custom.ModFlammableBlock;
 import net.moose.mooseblock.block.custom.ModStrippableBlock;
 import net.moose.mooseblock.enchantment.ModEnchantments;
+import net.moose.mooseblock.entity.ModEntities;
+import net.moose.mooseblock.entity.custom.MooseEntity;
+import net.moose.mooseblock.entity.custom.RaccoonEntity;
+import net.moose.mooseblock.entity.custom.RedPandaEntity;
 import net.moose.mooseblock.fluid.ModFluids;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.item.ModItems;
@@ -42,6 +47,10 @@ public class mooseblock implements ModInitializer {
 
 		ModFlammableBlock.registerFlammableBlock();
 		ModStrippableBlock.registerStrippableBlocks();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.RED_PANDA, RedPandaEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.RACCOON, RaccoonEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.MOOSE, MooseEntity.setAttributes());
 
 	}
 

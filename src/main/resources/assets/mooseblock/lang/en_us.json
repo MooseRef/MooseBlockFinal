@@ -43,6 +43,11 @@
   "item.mooseblock.dice_dodecahedron" : "Dice Dodecahedron",
   "item.mooseblock.dice_icosahedron" : "Dice Icosahedron",
 
+  "item.mooseblock.red_panda_spawn_egg" : "Red Panda Spawn Egg",
+  "item.mooseblock.raccoon_spawn_egg" : "Raccoon Spawn Egg",
+  "item.mooseblock.moose_spawn_egg" : "Moose Spawn Egg",
+
+
   "roll.outcome": "Your roll is...",
   "roll.tooltip": "Press Shift for more info!",
   "roll.sixtooltip": "Right Click to Roll a D6",

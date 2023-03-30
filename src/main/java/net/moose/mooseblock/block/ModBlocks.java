@@ -11,7 +11,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.moose.mooseblock.block.custom.*;
@@ -43,24 +42,20 @@ public class ModBlocks {
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block MOOD_FENCE_GATE = registerBlock("mood_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN), ModItemGroups.MOOSITE);
+                    WoodType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_BUTTON = registerBlock("mood_button",
             new ButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f)
-                    .sounds(BlockSoundGroup.WOOD),
-                    30, true,
-                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON), ModItemGroups.MOOSITE);
+                    .sounds(BlockSoundGroup.WOOD), BlockSetType.OAK, 30, true), ModItemGroups.MOOSITE);
     public static final Block MOOD_PRESSURE_PLATE = registerBlock("mood_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, AbstractBlock.Settings.of(Material.WOOD,
                     MOOD_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD),
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON),ModItemGroups.MOOSITE);
+                    BlockSetType.OAK),ModItemGroups.MOOSITE);
     public static final Block MOOD_DOOR = registerBlock("mood_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
-                    SoundEvents.BLOCK_WOODEN_DOOR_CLOSE, SoundEvents.BLOCK_WOODEN_DOOR_OPEN), ModItemGroups.MOOSITE);
+                    BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_TRAPDOOR = registerBlock("mood_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
-                    SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE, SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN), ModItemGroups.MOOSITE);
+                   BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_REDSTONE_LAMP = registerBlock("mood_redstone_lamp",
             new MoodRedstoneLampBlock(FabricBlockSettings.of(Material.METAL).strength(4).requiresTool()
                     .luminance(state -> state.get(MoodRedstoneLampBlock.LIT) ? 15 : 0)),ModItemGroups.MOOSITE);
@@ -91,24 +86,20 @@ public class ModBlocks {
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block SATIN_FENCE_GATE = registerBlock("satin_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f).requiresTool(),
-                    SoundEvents.BLOCK_FENCE_GATE_CLOSE, SoundEvents.BLOCK_FENCE_GATE_OPEN), ModItemGroups.MOOSITE);
+                    WoodType.OAK), ModItemGroups.MOOSITE);
     public static final Block SATIN_BUTTON = registerBlock("satin_button",
             new ButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f)
-                    .sounds(BlockSoundGroup.WOOD),
-                    30, true,
-                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON), ModItemGroups.MOOSITE);
+                    .sounds(BlockSoundGroup.WOOD), BlockSetType.OAK,30, true), ModItemGroups.MOOSITE);
     public static final Block SATIN_PRESSURE_PLATE = registerBlock("satin_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, AbstractBlock.Settings.of(Material.WOOD,
                     SATIN_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD),
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_OFF,
-                    SoundEvents.BLOCK_WOODEN_PRESSURE_PLATE_CLICK_ON),ModItemGroups.MOOSITE);
+                    BlockSetType.OAK),ModItemGroups.MOOSITE);
     public static final Block SATIN_DOOR = registerBlock("satin_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
-                    SoundEvents.BLOCK_WOODEN_DOOR_CLOSE, SoundEvents.BLOCK_WOODEN_DOOR_OPEN), ModItemGroups.MOOSITE);
+                    BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block SATIN_TRAPDOOR = registerBlock("satin_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
-                    SoundEvents.BLOCK_WOODEN_TRAPDOOR_CLOSE, SoundEvents.BLOCK_WOODEN_TRAPDOOR_OPEN), ModItemGroups.MOOSITE);
+                    BlockSetType.OAK), ModItemGroups.MOOSITE);
 
     public static final Block SATIN_SAPLING = registerBlock("satin_sapling",
             new SaplingBlock(new SatinSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
@@ -117,47 +108,47 @@ public class ModBlocks {
 
 
     public static final Block BLACK_ROSE = registerBlock("black_rose",
-            new FlowerBlock(StatusEffects.BAD_OMEN, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.BAD_OMEN, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_BLACK_ROSE = registerBlockWithoutItem("potted_black_rose",
             new FlowerPotBlock(BLACK_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block WHITE_ROSE = registerBlock("white_rose",
-            new FlowerBlock(StatusEffects.GLOWING, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.GLOWING, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_WHITE_ROSE = registerBlockWithoutItem("potted_white_rose",
             new FlowerPotBlock(WHITE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block RED_ROSE = registerBlock("red_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_RED_ROSE = registerBlockWithoutItem("potted_red_rose",
             new FlowerPotBlock(RED_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block ORANGE_ROSE = registerBlock("orange_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_ORANGE_ROSE = registerBlockWithoutItem("potted_orange_rose",
             new FlowerPotBlock(ORANGE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block YELLOW_ROSE = registerBlock("yellow_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_YELLOW_ROSE = registerBlockWithoutItem("potted_yellow_rose",
             new FlowerPotBlock(YELLOW_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block ILL_ROSE = registerBlock("ill_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_ILL_ROSE = registerBlockWithoutItem("potted_ill_rose",
             new FlowerPotBlock(ILL_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block CYAN_ROSE = registerBlock("cyan_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_CYAN_ROSE = registerBlockWithoutItem("potted_cyan_rose",
             new FlowerPotBlock(CYAN_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block BLUE_ROSE = registerBlock("blue_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_BLUE_ROSE = registerBlockWithoutItem("potted_blue_rose",
             new FlowerPotBlock(BLUE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block PINK_ROSE = registerBlock("pink_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_PINK_ROSE = registerBlockWithoutItem("potted_pink_rose",
             new FlowerPotBlock(PINK_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block PURPLE_ROSE = registerBlock("purple_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_PURPLE_ROSE = registerBlockWithoutItem("potted_purple_rose",
             new FlowerPotBlock(PURPLE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block RAINBOW_ROSE = registerBlock("rainbow_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_RAINBOW_ROSE = registerBlockWithoutItem("potted_rainbow_rose",
             new FlowerPotBlock(RAINBOW_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
 
@@ -204,7 +195,7 @@ public class ModBlocks {
     public static final Block DEEPSLATE_MOOSITE_ORE = registerBlock("deepslate_moosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f,4.0f).requiresTool(), UniformIntProvider.create(3,7)), ModItemGroups.MOOSITE);
     public static final Block BLOCK_OF_MOOSITE = registerBlock("block_of_moosite",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)), ModItemGroups.MOOSITE);
 
     public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
             new TomatoCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)), ModItemGroups.MOOSITE);

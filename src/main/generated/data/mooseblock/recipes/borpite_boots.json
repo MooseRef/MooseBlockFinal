@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "mooseblock:borpite_boots"
-  }
+  },
+  "show_notification": true
 }
