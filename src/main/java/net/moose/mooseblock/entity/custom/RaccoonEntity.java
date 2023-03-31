@@ -4,15 +4,21 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.EndermiteEntity;
+import net.minecraft.entity.mob.SilverfishEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TadpoleEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.moose.mooseblock.entity.ModEntities;
+import net.moose.mooseblock.entity.goals.JumpInComposterGoal;
+import net.moose.mooseblock.entity.goals.SearchComposterGoal;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -24,6 +30,9 @@ import software.bernie.geckolib.core.object.PlayState;
 public class RaccoonEntity extends AnimalEntity implements GeoEntity {
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private BlockPos blockTarget;
+    private static final Ingredient BREEDING_INGREDIENT = Ingredient.ofItems(Items.ROTTEN_FLESH);
+
     public RaccoonEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -40,16 +49,24 @@ public class RaccoonEntity extends AnimalEntity implements GeoEntity {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new EscapeDangerGoal(this, 2.0));
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.0));
-        this.goalSelector.add(4, new WanderAroundFarGoal(this, 0.6f, 1));
         this.goalSelector.add(4, new TemptGoal(this, 1, Ingredient.ofItems(Items.POISONOUS_POTATO), false));
         this.goalSelector.add(5, new FollowParentGoal(this, 1));
-        this.goalSelector.add(6, new WanderAroundFarGoal(this, 1.0f));
-        this.goalSelector.add(7, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
-        this.goalSelector.add(8, new LookAroundGoal(this));
+        this.goalSelector.add(6, new SearchComposterGoal(this));
+        this.goalSelector.add(7, new JumpInComposterGoal(this));
+        this.goalSelector.add(8, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.add(9, new WanderAroundFarGoal(this, 1.0f));
+        this.goalSelector.add(10, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
+        this.goalSelector.add(11, new LookAroundGoal(this));
 
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, TadpoleEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, EndermiteEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, SilverfishEntity.class, true));
 
     }
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return BREEDING_INGREDIENT.test(stack);
+    }
+
 
 
     @Nullable
@@ -79,4 +96,14 @@ public class RaccoonEntity extends AnimalEntity implements GeoEntity {
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return cache;
     }
+
+    @Nullable
+    public BlockPos getBlockTarget() {
+        return this.blockTarget;
+    }
+    public void setBlockTarget(@Nullable BlockPos blockTarget) {
+        this.blockTarget = blockTarget;
+    }
+
+    public void clearBlockTarget() { this.blockTarget = null; }
 }

@@ -4,10 +4,12 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.mob.SilverfishEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
@@ -27,6 +29,7 @@ public class RedPandaEntity extends AnimalEntity implements GeoEntity {
         super(entityType, world);
     }
 
+    private static final Ingredient BREEDING_INGREDIENT = Ingredient.ofItems(Items.BAMBOO);
     public static DefaultAttributeContainer.Builder setAttributes() {
         return AnimalEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10)
@@ -42,21 +45,21 @@ public class RedPandaEntity extends AnimalEntity implements GeoEntity {
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.0));
         this.goalSelector.add(4, new TemptGoal(this, 1, Ingredient.ofItems(Items.BAMBOO), false));
         this.goalSelector.add(5, new FollowParentGoal(this, 1));
-        this.goalSelector.add(6, new WanderAroundFarGoal(this, 1.0f));
-        this.goalSelector.add(7, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
-        this.goalSelector.add(8, new LookAroundGoal(this));
-
-        // this.goalSelector.add(69, new FoxEntity.StopWanderingGoal());
-        // this.goalSelector.add(69, new FoxEntity.EscapeWhenNotAggressiveGoal(2.2));
+        this.goalSelector.add(6, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.add(8, new WanderAroundFarGoal(this, 1.0f));
+        this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 6.0f));
+        this.goalSelector.add(10, new LookAroundGoal(this));
 
 
-
-
-
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, SilverfishEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, SilverfishEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, EndermiteEntity.class, true));
 
     }
 
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return BREEDING_INGREDIENT.test(stack);
+    }
 
     @Nullable
     @Override
