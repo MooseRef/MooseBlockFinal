@@ -8,8 +8,8 @@ import net.moose.mooseblock.data.ModLootTableGenerator;
 import net.moose.mooseblock.data.ModModelProvider;
 import net.moose.mooseblock.data.ModRecipeGenerator;
 import net.moose.mooseblock.data.ModWorldGenerator;
-import net.moose.mooseblock.world.ModConfiguredFeatures;
-import net.moose.mooseblock.world.ModPlacedFeatures;
+import net.moose.mooseblock.world.feature.ModConfiguredFeatures;
+import net.moose.mooseblock.world.feature.ModPlacedFeatures;
 
 public class mooseblockdatgen implements DataGeneratorEntrypoint {
 	@Override

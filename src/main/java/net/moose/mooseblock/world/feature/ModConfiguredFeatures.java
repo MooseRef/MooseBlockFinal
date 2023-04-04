@@ -1,4 +1,4 @@
-package net.moose.mooseblock.world;
+package net.moose.mooseblock.world.feature;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -25,9 +25,14 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BORPITE_KEY = registerKey("borpite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MOOSITE_KEY = registerKey("moosite_ore");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLACK_ROSE_KEY = registerKey("black_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_ROSE_KEY = registerKey("white_rose");
+
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?,?>> context) {
+        var placedFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
+
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
@@ -63,12 +68,17 @@ public class ModConfiguredFeatures {
         register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 7));
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
 
+        register(context, BLACK_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLACK_ROSE)))));
+        register(context, WHITE_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.WHITE_ROSE)))));
+
     }
 
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-
-
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(mooseblock.MOD_ID, name));
     }
 

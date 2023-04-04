@@ -16,8 +16,8 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.moose.mooseblock.block.custom.*;
 import net.moose.mooseblock.item.ModItemGroups;
 import net.moose.mooseblock.mooseblock;
-import net.moose.mooseblock.world.tree.MoodSaplingGenerator;
-import net.moose.mooseblock.world.tree.SatinSaplingGenerator;
+import net.moose.mooseblock.world.feature.tree.MoodSaplingGenerator;
+import net.moose.mooseblock.world.feature.tree.SatinSaplingGenerator;
 
 public class ModBlocks {
 

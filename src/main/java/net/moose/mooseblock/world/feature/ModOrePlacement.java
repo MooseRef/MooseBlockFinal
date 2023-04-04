@@ -1,4 +1,4 @@
-package net.moose.mooseblock.world;
+package net.moose.mooseblock.world.feature;
 
 import net.minecraft.world.gen.placementmodifier.*;
 

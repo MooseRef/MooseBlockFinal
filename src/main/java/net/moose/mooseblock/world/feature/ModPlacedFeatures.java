@@ -1,4 +1,4 @@
-package net.moose.mooseblock.world;
+package net.moose.mooseblock.world.feature;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -7,8 +7,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.mooseblock;
 
@@ -20,6 +19,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> GOXITE_ORE_PLACED_KEY = registerKey("goxite_ore_placed");
     public static final RegistryKey<PlacedFeature> BORPITE_ORE_PLACED_KEY = registerKey("borpite_ore_placed");
     public static final RegistryKey<PlacedFeature> MOOSITE_ORE_PLACED_KEY = registerKey("moosite_ore_placed");
+    public static final RegistryKey<PlacedFeature> BLACK_ROSE_PLACED_KEY = registerKey("black_rose_placed");
+    public static final RegistryKey<PlacedFeature> WHITE_ROSE_PLACED_KEY = registerKey("white_rose_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context){
@@ -39,6 +40,13 @@ public class ModPlacedFeatures {
         register(context, MOOSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOOSITE_KEY),
                 ModOrePlacement.modifiersWithCount(5,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-60),YOffset.fixed(20))));
+
+        register(context, BLACK_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLACK_ROSE_KEY),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, WHITE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WHITE_ROSE_KEY),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
 
     }
 

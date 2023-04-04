@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
-import net.moose.mooseblock.world.ModPlacedFeatures;
+import net.moose.mooseblock.world.feature.ModPlacedFeatures;
 
 public class ModTreeGeneration {
        public static void generateTrees(){
