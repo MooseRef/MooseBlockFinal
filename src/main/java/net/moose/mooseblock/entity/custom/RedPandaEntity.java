@@ -75,8 +75,9 @@ public class RedPandaEntity extends AnimalEntity implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
 
-        if(tAnimationState.isMoving()) {
+        if(this.getVelocity().getX()!=0||this.getVelocity().getZ()!=0) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.redpanda.walk", Animation.LoopType.LOOP));
+        return PlayState.CONTINUE;
         }
 
         tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.redpanda.idle", Animation.LoopType.LOOP));

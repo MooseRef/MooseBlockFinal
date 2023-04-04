@@ -8,7 +8,6 @@ import net.minecraft.entity.mob.EndermiteEntity;
 import net.minecraft.entity.mob.SilverfishEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TadpoleEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -83,8 +82,9 @@ public class RaccoonEntity extends AnimalEntity implements GeoEntity {
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
 
-        if(tAnimationState.isMoving()) {
+        if(this.getVelocity().getX()!=0||this.getVelocity().getZ()!=0) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.raccoon.walk", Animation.LoopType.LOOP));
+            return PlayState.CONTINUE;
         }
 
         tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.raccoon.idle", Animation.LoopType.LOOP));
