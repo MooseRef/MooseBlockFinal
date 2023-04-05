@@ -21,15 +21,22 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOOSITE_ORE_PLACED_KEY = registerKey("moosite_ore_placed");
     public static final RegistryKey<PlacedFeature> BLACK_ROSE_PLACED_KEY = registerKey("black_rose_placed");
     public static final RegistryKey<PlacedFeature> WHITE_ROSE_PLACED_KEY = registerKey("white_rose_placed");
+    public static final RegistryKey<PlacedFeature> RED_ROSE_PLACED_KEY = registerKey("red_rose_placed");
+    public static final RegistryKey<PlacedFeature> ORANGE_ROSE_PLACED_KEY = registerKey("orange_rose_placed");
+    public static final RegistryKey<PlacedFeature> YELLOW_ROSE_PLACED_KEY = registerKey("yellow_rose_placed");
+    public static final RegistryKey<PlacedFeature> CYAN_ROSE_PLACED_KEY = registerKey("cyan_rose_placed");
+    public static final RegistryKey<PlacedFeature> BLUE_ROSE_PLACED_KEY = registerKey("blue_rose_placed");
+    public static final RegistryKey<PlacedFeature> PINK_ROSE_PLACED_KEY = registerKey("pink_rose_placed");
+    public static final RegistryKey<PlacedFeature> PURPLE_ROSE_PLACED_KEY = registerKey("purple_rose_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, MOOD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOOD_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,2),ModBlocks.MOOD_SAPLING));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,0),ModBlocks.MOOD_SAPLING));
         register(context, SATIN_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SATIN_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,1),ModBlocks.SATIN_SAPLING));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,0),ModBlocks.SATIN_SAPLING));
 
         register(context, GOXITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GOXITE_KEY),
                 ModOrePlacement.modifiersWithCount(5,
@@ -42,10 +49,31 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-60),YOffset.fixed(20))));
 
         register(context, BLACK_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLACK_ROSE_KEY),
-                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of());
         register(context, WHITE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WHITE_ROSE_KEY),
+                RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, RED_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RED_ROSE_KEY),
+                RarityFilterPlacementModifier.of(2), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, ORANGE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORANGE_ROSE_KEY),
+                RarityFilterPlacementModifier.of(2), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, YELLOW_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.YELLOW_ROSE_KEY),
+                RarityFilterPlacementModifier.of(2), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, CYAN_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CYAN_ROSE_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, BLUE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_ROSE_KEY),
+                RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, PINK_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_ROSE_KEY),
+                RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
+        register(context, PURPLE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PURPLE_ROSE_KEY),
+                RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of());
 
     }

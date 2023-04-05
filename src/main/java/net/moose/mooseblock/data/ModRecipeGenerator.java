@@ -504,5 +504,22 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.GOXITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.GOXITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DICE_ICOSAHEDRON)));
+
+
+        offerSingleOutputShapelessRecipe(exporter,Items.BLACK_DYE,ModBlocks.BLACK_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.LIGHT_GRAY_DYE,ModBlocks.WHITE_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.RED_DYE,ModBlocks.RED_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.ORANGE_DYE,ModBlocks.ORANGE_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.YELLOW_DYE,ModBlocks.YELLOW_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.GREEN_DYE,ModBlocks.ILL_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.CYAN_DYE,ModBlocks.CYAN_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.BLUE_DYE,ModBlocks.BLUE_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.PINK_DYE,ModBlocks.PINK_ROSE,"roses");
+        offerSingleOutputShapelessRecipe(exporter,Items.PURPLE_DYE,ModBlocks.PURPLE_ROSE,"roses");
+
+
+
                     }
+
+
 }

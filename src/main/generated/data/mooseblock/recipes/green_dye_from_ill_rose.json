@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "roses",
+  "ingredients": [
+    {
+      "item": "mooseblock:ill_rose"
+    }
+  ],
+  "result": {
+    "item": "minecraft:green_dye"
+  }
+}

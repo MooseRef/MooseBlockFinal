@@ -27,6 +27,13 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACK_ROSE_KEY = registerKey("black_rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_ROSE_KEY = registerKey("white_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RED_ROSE_KEY = registerKey("red_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORANGE_ROSE_KEY = registerKey("orange_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_ROSE_KEY = registerKey("yellow_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CYAN_ROSE_KEY = registerKey("cyan_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_ROSE_KEY = registerKey("blue_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_ROSE_KEY = registerKey("pink_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PURPLE_ROSE_KEY = registerKey("purple_rose");
 
 
 
@@ -69,11 +76,32 @@ public class ModConfiguredFeatures {
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
 
         register(context, BLACK_ROSE_KEY, Feature.FLOWER,
-                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLACK_ROSE)))));
         register(context, WHITE_ROSE_KEY, Feature.FLOWER,
-                ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.WHITE_ROSE)))));
+        register(context, RED_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.RED_ROSE)))));
+        register(context, ORANGE_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ORANGE_ROSE)))));
+        register(context, YELLOW_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.YELLOW_ROSE)))));
+        register(context, CYAN_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CYAN_ROSE)))));
+        register(context, BLUE_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_ROSE)))));
+        register(context, PINK_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PURPLE_ROSE)))));
+        register(context, PURPLE_ROSE_KEY, Feature.FLOWER,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_ROSE)))));
 
     }
 

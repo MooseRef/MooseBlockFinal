@@ -127,6 +127,7 @@ public class ModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(mooseblock.MOD_ID, name), item);
     }
+
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
@@ -138,4 +139,5 @@ public class ModItems {
         addItemsToItemGroup();
     }
 }
+
 

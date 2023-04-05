@@ -85,8 +85,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 6));
         addDrop(ModBlocks.TOMATO_CROP,cropDrops(ModBlocks.TOMATO_CROP,ModItems.TOMATO_SEEDS,ModItems.TOMATO, builder));
 
-
-
         addDrop(ModBlocks.BLACK_ROSE);
         addDrop(ModBlocks.POTTED_BLACK_ROSE, pottedPlantDrops(ModBlocks.BLACK_ROSE));
         addDrop(ModBlocks.WHITE_ROSE);
