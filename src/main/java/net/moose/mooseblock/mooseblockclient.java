@@ -63,6 +63,7 @@ public class mooseblockclient implements ClientModInitializer {
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.GLITTER_PARTICLE, GlitterParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.SPARKLE_PARTICLE, GlitterParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.ILL_ROSE_PARTICLE, GlitterParticle.Factory::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_GLUE,ModFluids.FLOWING_GLUE,
                 new SimpleFluidRenderHandler(

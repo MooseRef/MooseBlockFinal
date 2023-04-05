@@ -43,7 +43,7 @@ public class NightVisionBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 420, 0, true, false ));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 350, 0, true, false ));
         }
 
 

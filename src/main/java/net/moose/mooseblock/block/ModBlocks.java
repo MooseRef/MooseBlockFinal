@@ -128,7 +128,7 @@ public class ModBlocks {
     public static final Block POTTED_YELLOW_ROSE = registerBlockWithoutItem("potted_yellow_rose",
             new FlowerPotBlock(YELLOW_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block ILL_ROSE = registerBlock("ill_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new IllFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_ILL_ROSE = registerBlockWithoutItem("potted_ill_rose",
             new FlowerPotBlock(ILL_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block CYAN_ROSE = registerBlock("cyan_rose",

@@ -1,9 +1,9 @@
-// 1.19.4	2023-04-05T14:10:20.9539585	MooseBlock/Recipes
+// 1.19.4	2023-04-05T14:54:05.1567828	MooseBlock/Recipes
 b194106f7d04f53c41cdacb2d7d3f1bc8f3feae8 data\mooseblock\recipes\borpite_from_blasting_borpite_ore.json
 8547edcda892e271dcadc38302fa483c7b0b7bb6 data\mooseblock\advancements\recipes\misc\purple_dye_from_purple_rose.json
 72c0ad4e88125f302f477f193c2db77bb2850326 data\mooseblock\recipes\goxite_from_blasting_deepslate_goxite_ore.json
-8d36ce6eb90baaa4736668beb48aeb16c3020e15 data\mooseblock\recipes\satin_pressure_plate.json
 cc9fbf46637ca343b2856c0609513fc30a456362 data\mooseblock\advancements\recipes\misc\mood_fence.json
+8d36ce6eb90baaa4736668beb48aeb16c3020e15 data\mooseblock\recipes\satin_pressure_plate.json
 a0531c1994f5a376464893e150e1579c922adff5 data\mooseblock\advancements\recipes\misc\goxite_boots.json
 a67e70598d71874ef3077e1185467f9194761353 data\mooseblock\advancements\recipes\misc\black_dye_from_black_rose.json
 66907aa8f19194e45b3de7e98a7961e9ea109aeb data\mooseblock\advancements\recipes\misc\satin_wood.json
@@ -43,8 +43,8 @@ b43f55bec6dfdb25b302fdec6adab850bdf98241 data\mooseblock\advancements\recipes\mi
 3850ca102561e57ba230506f251fb307ee37ee81 data\mooseblock\advancements\recipes\decorations\block_of_raw_goxite.json
 e0c64eacb627860ba6279abc462ede1c8d2e384e data\mooseblock\advancements\recipes\misc\satin_fence_gate.json
 d603b2470fd9372583556ed88a48a4e6c73775a1 data\mooseblock\advancements\recipes\misc\goxite_from_smelting_raw_goxite.json
-e163099be177ba3c5df26e896e865e2265837eb2 data\mooseblock\advancements\recipes\misc\goxite_shovel.json
 f6b0f9118c1681e08f5a9c3b6bed7d83286e2ea0 data\mooseblock\advancements\recipes\misc\borpite_leggings.json
+e163099be177ba3c5df26e896e865e2265837eb2 data\mooseblock\advancements\recipes\misc\goxite_shovel.json
 cbab2e45d5e289a6b1e45b7915ec3ad75e430965 data\mooseblock\advancements\recipes\misc\polished_gneiss_wall.json
 1a9acab09c0c1c9a619785e3c76980fb10a79ea0 data\mooseblock\recipes\satin_wood.json
 a06948d64b411cdf933a70fd0ea2e782abde8309 data\mooseblock\recipes\raw_borpite.json
