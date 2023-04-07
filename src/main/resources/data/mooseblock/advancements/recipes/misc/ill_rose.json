@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "mooseblock:mood_planks"
+              "minecraft:wither_rose"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mooseblock:mood_planks"
+        "recipe": "mooseblock:ill_rose"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mooseblock:mood_planks"
+      "mooseblock:ill_rose"
     ]
   }
 }

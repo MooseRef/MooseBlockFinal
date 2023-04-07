@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log": {
+    "has_item": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:acacia_log"
+              "mooseblock:gneiss"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:acacia_wood"
+        "recipe": "mooseblock:polished_gneiss"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_log",
+      "has_item",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:acacia_wood"
+      "mooseblock:polished_gneiss"
     ]
   }
 }

@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log": {
+    "has_item": {
       "conditions": {
         "items": [
           {
-            "tag": "mooseblock:mood_logs"
+            "items": [
+              "mooseblock:goxite"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mooseblock:mood_planks"
+        "recipe": "mooseblock:block_of_goxite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_log",
+      "has_item",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mooseblock:mood_planks"
+      "mooseblock:block_of_goxite"
     ]
   }
 }

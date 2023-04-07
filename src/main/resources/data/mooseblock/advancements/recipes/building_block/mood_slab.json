@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_log": {
+    "has_item": {
       "conditions": {
         "items": [
           {
-            "tag": "mooseblock:mood_planks"
+            "items": [
+              "mooseblock:mood_planks"
+            ]
           }
         ]
       },
@@ -20,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_log",
+      "has_item",
       "has_the_recipe"
     ]
   ],
