@@ -9,6 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+import net.moose.mooseblock.fluid.ModFluids;
 import net.moose.mooseblock.item.ModItems;
 import net.moose.mooseblock.util.ModTags;
 
@@ -193,7 +194,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input('X',ModBlocks.SATIN_PLANKS)
                 .input('G',Items.GOLD_INGOT)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.SATIN_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS));
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.SATIN_TRAPDOOR)));
 
 
 
@@ -301,6 +303,26 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.BLOCK_OF_MOOSITE);
 
         offerSingleOutputShapelessRecipe(exporter,ModItems.TOMATO_SEEDS,ModItems.TOMATO,"tomato_seeds");
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.GOLDEN_TOMATO)
+                .pattern("GGG")
+                .pattern("GXG")
+                .pattern("GGG")
+                .input('X',ModItems.TOMATO)
+                .input('G',Items.GOLD_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.TOMATO),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.TOMATO))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.GOLDEN_TOMATO)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ILL_ROSE)
+                .pattern("   ")
+                .pattern(" R ")
+                .pattern(" W ")
+                .input('R',ModTags.Items.MOOSE_ROSES)
+                .input('W',Blocks.WITHER_ROSE)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ILL_ROSE),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ILL_ROSE))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.ILL_ROSE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.RAINBOW_ROSE)
                 .pattern("YGC")
@@ -504,6 +526,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.GOXITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.GOXITE))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.DICE_ICOSAHEDRON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.GLUE_BUCKET)
+                .pattern("XXX")
+                .pattern("XWX")
+                .pattern("XXX")
+                .input('X', Items.LEATHER)
+                .input('W', Items.WATER_BUCKET)
+                .criterion(FabricRecipeProvider.hasItem(Items.WATER_BUCKET),
+                        FabricRecipeProvider.conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModFluids.GLUE_BUCKET)));
 
 
         offerSingleOutputShapelessRecipe(exporter,Items.BLACK_DYE,ModBlocks.BLACK_ROSE,"roses");

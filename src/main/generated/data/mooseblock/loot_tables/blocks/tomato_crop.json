@@ -10,26 +10,8 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "block": "mooseblock:tomato_crop",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "age": "7"
-                  }
-                }
-              ],
-              "name": "mooseblock:tomato_seeds"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "mooseblock:tomato"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "mooseblock:tomato"
         }
       ],
       "rolls": 1.0
@@ -41,7 +23,7 @@
           "block": "mooseblock:tomato_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "7"
+            "age": "6"
           }
         }
       ],
@@ -60,6 +42,31 @@
             }
           ],
           "name": "mooseblock:tomato"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "mooseblock:tomato_crop",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "6"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "mooseblock:rotten_tomato"
         }
       ],
       "rolls": 1.0

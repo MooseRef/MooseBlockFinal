@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "mooseblock:satin_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "XGX"
+  ],
+  "result": {
+    "count": 2,
+    "item": "mooseblock:satin_trapdoor"
+  },
+  "show_notification": true
+}

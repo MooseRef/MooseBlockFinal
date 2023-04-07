@@ -128,27 +128,27 @@ public class ModBlocks {
     public static final Block POTTED_YELLOW_ROSE = registerBlockWithoutItem("potted_yellow_rose",
             new FlowerPotBlock(YELLOW_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block ILL_ROSE = registerBlock("ill_rose",
-            new IllFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new IllFlowerBlock(StatusEffects.POISON, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_ILL_ROSE = registerBlockWithoutItem("potted_ill_rose",
             new FlowerPotBlock(ILL_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block CYAN_ROSE = registerBlock("cyan_rose",
-            new RoseFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new RoseFlowerBlock(StatusEffects.WATER_BREATHING, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_CYAN_ROSE = registerBlockWithoutItem("potted_cyan_rose",
             new FlowerPotBlock(CYAN_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block BLUE_ROSE = registerBlock("blue_rose",
-            new RoseFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new RoseFlowerBlock(StatusEffects.SPEED, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_BLUE_ROSE = registerBlockWithoutItem("potted_blue_rose",
             new FlowerPotBlock(BLUE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block PINK_ROSE = registerBlock("pink_rose",
-            new RoseFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new RoseFlowerBlock(StatusEffects.JUMP_BOOST, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_PINK_ROSE = registerBlockWithoutItem("potted_pink_rose",
             new FlowerPotBlock(PINK_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block PURPLE_ROSE = registerBlock("purple_rose",
-            new RoseFlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new RoseFlowerBlock(StatusEffects.JUMP_BOOST, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_PURPLE_ROSE = registerBlockWithoutItem("potted_purple_rose",
             new FlowerPotBlock(PURPLE_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
     public static final Block RAINBOW_ROSE = registerBlock("rainbow_rose",
-            new FlowerBlock(StatusEffects.STRENGTH, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
+            new FlowerBlock(StatusEffects.REGENERATION, 9, AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offset(AbstractBlock.OffsetType.XZ)),ModItemGroups.MOOSITE);
     public static final Block POTTED_RAINBOW_ROSE = registerBlockWithoutItem("potted_rainbow_rose",
             new FlowerPotBlock(RAINBOW_ROSE, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
 

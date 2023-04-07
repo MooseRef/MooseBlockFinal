@@ -26,6 +26,8 @@ public class ModTags {
 
         public static final TagKey<Item> SATIN_LOGS = createCommonTag("satin_logs");
 
+        public static final TagKey<Item> MOOSE_ROSES = createCommonTag("moose_roses");
+
 
         public static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(mooseblock.MOD_ID, name));

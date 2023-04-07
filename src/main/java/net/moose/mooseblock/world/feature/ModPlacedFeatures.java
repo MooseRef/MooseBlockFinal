@@ -16,9 +16,13 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOOD_PLACED_KEY = registerKey("mood_placed");
     public static final RegistryKey<PlacedFeature> SATIN_PLACED_KEY = registerKey("satin_placed");
+
     public static final RegistryKey<PlacedFeature> GOXITE_ORE_PLACED_KEY = registerKey("goxite_ore_placed");
     public static final RegistryKey<PlacedFeature> BORPITE_ORE_PLACED_KEY = registerKey("borpite_ore_placed");
     public static final RegistryKey<PlacedFeature> MOOSITE_ORE_PLACED_KEY = registerKey("moosite_ore_placed");
+
+    public static final RegistryKey<PlacedFeature> GNEISS_PLACED_KEY = registerKey("gneiss_placed");
+
     public static final RegistryKey<PlacedFeature> BLACK_ROSE_PLACED_KEY = registerKey("black_rose_placed");
     public static final RegistryKey<PlacedFeature> WHITE_ROSE_PLACED_KEY = registerKey("white_rose_placed");
     public static final RegistryKey<PlacedFeature> RED_ROSE_PLACED_KEY = registerKey("red_rose_placed");
@@ -46,7 +50,13 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-45),YOffset.fixed(60))));
         register(context, MOOSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOOSITE_KEY),
                 ModOrePlacement.modifiersWithCount(5,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-60),YOffset.fixed(20))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-60),YOffset.fixed(10))));
+
+        register(context, GNEISS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GNEISS_KEY),
+                ModOrePlacement.modifiersWithCount(5,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-20),YOffset.fixed(60))));
+
+
 
         register(context, BLACK_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLACK_ROSE_KEY),
                 RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,

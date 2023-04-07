@@ -1,5 +1,5 @@
 {
-  "feature": "mooseblock:moosite_ore",
+  "feature": "mooseblock:gneiss",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 10
+          "absolute": 60
         },
         "min_inclusive": {
-          "absolute": -60
+          "absolute": -20
         }
       }
     },

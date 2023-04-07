@@ -37,7 +37,10 @@
 
   "item.mooseblock.tomato_seeds" : "Tomato Seeds",
   "item.mooseblock.tomato" : "Tomato",
+  "item.mooseblock.golden_tomato" : "Golden Tomato",
+  "item.mooseblock.rotten_tomato" : "Rotten Tomato",
   "item.mooseblock.tomato_soup" : "Tomato Soup",
+
 
   "item.mooseblock.dice_cube" : "Dice Cube",
   "item.mooseblock.dice_dodecahedron" : "Dice Dodecahedron",
@@ -113,6 +116,8 @@
 
   "block.mooseblock.mood_sapling": "Mood Sapling",
   "block.mooseblock.potted_mood_sapling": "Potted Mood Sapling",
+  "block.mooseblock.satin_sapling": "Satin Sapling",
+  "block.mooseblock.potted_satin_sapling": "Potted Satin Sapling",
 
   "block.mooseblock.black_rose": "Black Rose",
   "block.mooseblock.potted_black_rose": "Potted Black Rose",

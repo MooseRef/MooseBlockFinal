@@ -21,9 +21,12 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MOOD_KEY = registerKey("mood_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SATIN_KEY = registerKey("satin_tree");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> GOXITE_KEY = registerKey("goxite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BORPITE_KEY = registerKey("borpite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MOOSITE_KEY = registerKey("moosite_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GNEISS_KEY = registerKey("gneiss");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACK_ROSE_KEY = registerKey("black_rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_ROSE_KEY = registerKey("white_rose");
@@ -56,6 +59,10 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.MOOSITE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_MOOSITE_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldGneiss =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.GNEISS.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.GNEISS.getDefaultState()));
+
         register(context, MOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.MOOD_LOG),
                 new StraightTrunkPlacer(5, 3, 3),
@@ -74,6 +81,8 @@ public class ModConfiguredFeatures {
         register(context, GOXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldGoxite, 12));
         register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 7));
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
+
+        register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 29));
 
         register(context, BLACK_ROSE_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "mooseblock:tomato"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GXG",
+    "GGG"
+  ],
+  "result": {
+    "item": "mooseblock:golden_tomato"
+  },
+  "show_notification": true
+}

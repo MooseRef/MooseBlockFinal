@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 import net.moose.mooseblock.entity.ModEntities;
 import net.moose.mooseblock.entity.goals.JumpInComposterGoal;
 import net.moose.mooseblock.entity.goals.SearchComposterGoal;
+import net.moose.mooseblock.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -30,7 +31,7 @@ public class RaccoonEntity extends AnimalEntity implements GeoEntity {
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private BlockPos blockTarget;
-    private static final Ingredient BREEDING_INGREDIENT = Ingredient.ofItems(Items.ROTTEN_FLESH);
+    private static final Ingredient BREEDING_INGREDIENT = Ingredient.ofItems(ModItems.ROTTEN_TOMATO);
 
     public RaccoonEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -48,7 +49,7 @@ public class RaccoonEntity extends AnimalEntity implements GeoEntity {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new EscapeDangerGoal(this, 2.0));
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.0));
-        this.goalSelector.add(4, new TemptGoal(this, 1, Ingredient.ofItems(Items.POISONOUS_POTATO), false));
+        this.goalSelector.add(4, new TemptGoal(this, 1, Ingredient.ofItems(ModItems.ROTTEN_TOMATO,Items.ROTTEN_FLESH,Items.POISONOUS_POTATO), false));
         this.goalSelector.add(5, new FollowParentGoal(this, 1));
         this.goalSelector.add(6, new SearchComposterGoal(this));
         this.goalSelector.add(7, new JumpInComposterGoal(this));

@@ -12,12 +12,18 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.TimeHelper;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.World;
 import net.moose.mooseblock.entity.ModEntities;
@@ -101,6 +107,23 @@ public class MooseEntity extends AnimalEntity implements GeoEntity, Angerable {
     @Override
     public boolean isBreedingItem(ItemStack stack) {
         return BREEDING_INGREDIENT.test(stack);
+    }
+
+
+    @Override
+    public ActionResult interactMob(PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+        if (itemStack.isOf(Items.BUCKET) && !this.isBaby()) {
+            player.playSound(SoundEvents.ENTITY_COW_MILK, 1.1f, 0.8f);
+            ItemStack itemStack2 = ItemUsage.exchangeStack(itemStack, player, Items.MILK_BUCKET.getDefaultStack());
+            player.setStackInHand(hand, itemStack2);
+            return ActionResult.success(this.world.isClient);
+        }
+        ActionResult actionResult = super.interactMob(player, hand);
+        if (actionResult.isAccepted() && this.isBreedingItem(itemStack)) {
+            this.world.playSoundFromEntity(null, this, this.getEatSound(itemStack), SoundCategory.NEUTRAL, 1.0f, MathHelper.nextBetween(this.world.random, 0.8f, 1.2f));
+        }
+        return actionResult;
     }
 
     @Override

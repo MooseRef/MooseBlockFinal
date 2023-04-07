@@ -2,7 +2,13 @@ package net.moose.mooseblock.data;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.predicate.StatePredicate;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.block.custom.TomatoCropBlock;
@@ -83,7 +89,13 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_GNEISS_WALL);
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 6));
-        addDrop(ModBlocks.TOMATO_CROP,cropDrops(ModBlocks.TOMATO_CROP,ModItems.TOMATO_SEEDS,ModItems.TOMATO, builder));
+        addDrop(ModBlocks.TOMATO_CROP, this.applyExplosionDecay(ModBlocks.TOMATO_CROP,
+                LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(ModItems.TOMATO)))
+                        .pool(LootPool.builder().conditionally(builder).with(ItemEntry.builder
+                                (ModItems.TOMATO).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286f, 3))))
+                        .pool(LootPool.builder().conditionally(builder).with(ItemEntry.builder
+                                (ModItems.ROTTEN_TOMATO).conditionally(RandomChanceLootCondition.builder(0.02f))))));
+
 
         addDrop(ModBlocks.BLACK_ROSE);
         addDrop(ModBlocks.POTTED_BLACK_ROSE, pottedPlantDrops(ModBlocks.BLACK_ROSE));
