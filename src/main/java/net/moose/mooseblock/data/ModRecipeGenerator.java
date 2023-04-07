@@ -303,6 +303,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 ModBlocks.BLOCK_OF_MOOSITE);
 
         offerSingleOutputShapelessRecipe(exporter,ModItems.TOMATO_SEEDS,ModItems.TOMATO,"tomato_seeds");
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.GOLDEN_TOMATO)
                 .pattern("GGG")
                 .pattern("GXG")
