@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
 
-    "mooseblock:regen_pad",
-
     "mooseblock:gneiss",
     "mooseblock:gneiss_stairs",
     "mooseblock:gneiss_slab",
