@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mooseblock:satin_planks"
+        "recipe": "mooseblock:satin_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mooseblock:satin_planks"
+      "mooseblock:satin_stairs"
     ]
   }
 }

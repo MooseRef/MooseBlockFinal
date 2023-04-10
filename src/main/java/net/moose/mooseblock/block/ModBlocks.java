@@ -30,18 +30,18 @@ public class ModBlocks {
     public static final Block STRIPPED_MOOD_WOOD = registerBlock("stripped_mood_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),ModItemGroups.MOOSITE);
     public static final Block MOOD_LEAVES = registerBlock("mood_leaves",
-            new MoodLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
+            new MoodLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.1f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block MOOD_PLANKS = registerBlock("mood_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block MOOD_STAIRS = registerBlock("mood_stairs",
             new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block MOOD_SLAB = registerBlock("mood_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block MOOD_FENCE = registerBlock("mood_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block MOOD_FENCE_GATE = registerBlock("mood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f).requiresTool(),
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f),
                     WoodType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_BUTTON = registerBlock("mood_button",
             new ButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f)
@@ -51,17 +51,17 @@ public class ModBlocks {
                     MOOD_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD),
                     BlockSetType.OAK),ModItemGroups.MOOSITE);
     public static final Block MOOD_DOOR = registerBlock("mood_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).nonOpaque(),
                     BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_TRAPDOOR = registerBlock("mood_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).nonOpaque(),
                    BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block MOOD_REDSTONE_LAMP = registerBlock("mood_redstone_lamp",
-            new MoodRedstoneLampBlock(FabricBlockSettings.of(Material.METAL).strength(4).requiresTool()
+            new MoodRedstoneLampBlock(FabricBlockSettings.of(Material.METAL).strength(4)
                     .luminance(state -> state.get(MoodRedstoneLampBlock.LIT) ? 15 : 0)),ModItemGroups.MOOSITE);
 
     public static final Block MOOD_SAPLING = registerBlock("mood_sapling",
-            new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
+            new SaplingBlock(new MoodSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
     public static final Block POTTED_MOOD_SAPLING = registerBlockWithoutItem("potted_mood_sapling",
             new FlowerPotBlock(MOOD_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
 
@@ -74,18 +74,18 @@ public class ModBlocks {
     public static final Block STRIPPED_SATIN_WOOD = registerBlock("stripped_satin_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)),ModItemGroups.MOOSITE);
     public static final Block SATIN_LEAVES = registerBlock("satin_leaves",
-            new SatinLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.2f).requiresTool()),ModItemGroups.MOOSITE);
+            new SatinLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(0.1f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block SATIN_PLANKS = registerBlock("satin_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block SATIN_STAIRS = registerBlock("satin_stairs",
-            new StairsBlock(SATIN_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new StairsBlock(SATIN_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block SATIN_SLAB = registerBlock("satin_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block SATIN_FENCE = registerBlock("satin_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.0f,3.0f)),ModItemGroups.MOOSITE);
     public static final Block SATIN_FENCE_GATE = registerBlock("satin_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f).requiresTool(),
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.0f,3.0f),
                     WoodType.OAK), ModItemGroups.MOOSITE);
     public static final Block SATIN_BUTTON = registerBlock("satin_button",
             new ButtonBlock(FabricBlockSettings.of(Material.DECORATION).noCollision().strength(0.5f)
@@ -95,14 +95,14 @@ public class ModBlocks {
                     SATIN_PLANKS.getDefaultMapColor()).noCollision().strength(0.5f).sounds(BlockSoundGroup.WOOD),
                     BlockSetType.OAK),ModItemGroups.MOOSITE);
     public static final Block SATIN_DOOR = registerBlock("satin_door",
-            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(2.0f,3.0f).nonOpaque(),
                     BlockSetType.OAK), ModItemGroups.MOOSITE);
     public static final Block SATIN_TRAPDOOR = registerBlock("satin_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).requiresTool().nonOpaque(),
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(2.0f,3.0f).nonOpaque(),
                     BlockSetType.OAK), ModItemGroups.MOOSITE);
 
     public static final Block SATIN_SAPLING = registerBlock("satin_sapling",
-            new SaplingBlock(new SatinSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().requiresTool().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
+            new SaplingBlock(new SatinSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS)),ModItemGroups.MOOSITE);
     public static final Block POTTED_SATIN_SAPLING = registerBlockWithoutItem("potted_satin_sapling",
             new FlowerPotBlock(SATIN_SAPLING, AbstractBlock.Settings.of(Material.DECORATION).breakInstantly().nonOpaque()), ModItemGroups.MOOSITE);
 
@@ -155,22 +155,22 @@ public class ModBlocks {
 
 
     public static final Block GNEISS = registerBlock("gneiss",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(3.0f,3.0f).requiresTool()), ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(1.0f,1.0f).requiresTool()), ModItemGroups.MOOSITE);
     public static final Block GNEISS_STAIRS = registerBlock("gneiss_stairs",
-            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block GNEISS_SLAB = registerBlock("gneiss_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block GNEISS_WALL = registerBlock("gneiss_wall",
-            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block POLISHED_GNEISS = registerBlock("polished_gneiss",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(3.0f,3.0f).requiresTool()), ModItemGroups.MOOSITE);
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_PILLAR).strength(1.0f,1.0f).requiresTool()), ModItemGroups.MOOSITE);
     public static final Block POLISHED_GNEISS_STAIRS = registerBlock("polished_gneiss_stairs",
-            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new StairsBlock(MOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.QUARTZ_STAIRS).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block POLISHED_GNEISS_SLAB = registerBlock("polished_gneiss_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_SLAB).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
     public static final Block POLISHED_GNEISS_WALL = registerBlock("polished_gneiss_wall",
-            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(3.0f,3.0f).requiresTool()),ModItemGroups.MOOSITE);
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL).strength(1.0f,1.0f).requiresTool()),ModItemGroups.MOOSITE);
 
     public static final Block GOXITE_ORE = registerBlock("goxite_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f,4.0f).requiresTool()), ModItemGroups.MOOSITE);

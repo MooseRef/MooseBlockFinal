@@ -43,13 +43,13 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1,0.1f,0),ModBlocks.SATIN_SAPLING));
 
         register(context, GOXITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GOXITE_KEY),
-                ModOrePlacement.modifiersWithCount(5,
+                ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-30),YOffset.fixed(80))));
         register(context, BORPITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BORPITE_KEY),
-                ModOrePlacement.modifiersWithCount(5,
+                ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-45),YOffset.fixed(60))));
         register(context, MOOSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOOSITE_KEY),
-                ModOrePlacement.modifiersWithCount(5,
+                ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-60),YOffset.fixed(10))));
 
         register(context, GNEISS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GNEISS_KEY),

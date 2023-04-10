@@ -16,5 +16,14 @@ public class ModRegistries {
         registry.add(ModBlocks.STRIPPED_MOOD_WOOD, 150 );
         registry.add(ModBlocks.MOOD_PLANKS, 150 );
         registry.add(ModBlocks.MOOD_SAPLING, 150 );
+
+        registry.add(ModBlocks.SATIN_LOG, 150 ); // x20
+        registry.add(ModBlocks.SATIN_WOOD, 150 );
+        registry.add(ModBlocks.STRIPPED_SATIN_LOG, 150 );
+        registry.add(ModBlocks.STRIPPED_SATIN_WOOD, 150 );
+        registry.add(ModBlocks.SATIN_PLANKS, 150 );
+        registry.add(ModBlocks.SATIN_SAPLING, 150 );
+
+
     }
 }

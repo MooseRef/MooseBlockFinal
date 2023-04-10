@@ -78,11 +78,11 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
-        register(context, GOXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldGoxite, 12));
-        register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 7));
+        register(context, GOXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldGoxite, 7));
+        register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 5));
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
 
-        register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 29));
+        register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 18));
 
         register(context, BLACK_ROSE_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
