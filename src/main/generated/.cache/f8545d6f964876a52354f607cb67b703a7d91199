@@ -1,10 +1,10 @@
-// 1.19.4	2023-04-11T09:08:26.2061981	MooseBlock/Model Definitions
+// 1.19.4	2023-04-11T11:25:06.9132189	MooseBlock/Model Definitions
 c368840a5ce6d0911fb361767bff7991cba9782f assets\mooseblock\models\block\potted_satin_sapling.json
 abe57b475c93dc83dff7be0b5b90a491963af46e assets\mooseblock\models\item\satin_log.json
 52bcee21a825669436c02def1bac985b000abdb3 assets\mooseblock\models\item\rainbow_rose.json
 243ab2d50155933b3db225ac03acb195f78ca933 assets\mooseblock\models\item\mood_leaves.json
-3901b5c9b6b85efca203f802704f951b74730723 assets\mooseblock\blockstates\goxite_ore.json
 1d19cc80cccb7837b936e9a3f35703247d2c0653 assets\mooseblock\blockstates\mood_sapling.json
+3901b5c9b6b85efca203f802704f951b74730723 assets\mooseblock\blockstates\goxite_ore.json
 9207e955f63a0ed74972281ebf92c63a07a83b87 assets\mooseblock\models\block\satin_door_bottom_right_open.json
 54adf2a99853a0530a07e0a04d09b785150b669e assets\mooseblock\models\block\potted_pink_rose.json
 9780b13731199934455b5ad38b4fb9af3867223f assets\mooseblock\models\block\blue_rose.json
@@ -135,8 +135,8 @@ f42f2421d9592e5b201a79e305d87349995a7ebb assets\mooseblock\blockstates\potted_or
 34fe13536c9f0c98c68b2ed9f80ea84b776ba54b assets\mooseblock\models\block\potted_white_rose.json
 bafef8c4a54fc5ed6b92f6e1c7c2ff513633870a assets\mooseblock\models\item\deepslate_moosite_ore.json
 879d89195526fb1087831e2352849bf9df6130a0 assets\mooseblock\models\block\borpite_ore.json
-18c863c38b5981efdc9f696221999e6a590dde1d assets\mooseblock\models\item\goxite_axe.json
 83e787fe175b7516ed28776fc4a6716de95cf9a8 assets\mooseblock\models\item\goxite_hoe.json
+18c863c38b5981efdc9f696221999e6a590dde1d assets\mooseblock\models\item\goxite_axe.json
 9db3b3f9ead781f595d449575ac1115274873df2 assets\mooseblock\models\item\yellow_rose.json
 100a45bd9ccf02cf5bb4d96c453441cac69c67f4 assets\mooseblock\blockstates\deepslate_moosite_ore.json
 056d652717ae20813b405da95b1cde6c8e70d83c assets\mooseblock\models\block\satin_door_top_right_open.json

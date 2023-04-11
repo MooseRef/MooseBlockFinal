@@ -196,7 +196,22 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.SATIN_PLANKS))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "satin_trapdoor"));
 
-
+        offerSmelting(exporter, List.of(ModBlocks.MOOD_LOG), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"mood");
+        offerSmelting(exporter, List.of(ModBlocks.STRIPPED_MOOD_LOG), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"mood");
+        offerSmelting(exporter, List.of(ModBlocks.MOOD_WOOD), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"mood");
+        offerSmelting(exporter, List.of(ModBlocks.STRIPPED_MOOD_WOOD), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"mood");
+        offerSmelting(exporter, List.of(ModBlocks.SATIN_LOG), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"satin");
+        offerSmelting(exporter, List.of(ModBlocks.STRIPPED_SATIN_LOG), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"satin");
+        offerSmelting(exporter, List.of(ModBlocks.SATIN_WOOD), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"satin");
+        offerSmelting(exporter, List.of(ModBlocks.STRIPPED_SATIN_WOOD), RecipeCategory.MISC, Items.CHARCOAL,
+                0.15f, 200,"satin");
 
         offerSmelting(exporter, List.of(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,
                 0.5f, 200,"moosite");

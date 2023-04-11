@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "group": "satin",
+  "ingredient": {
+    "item": "mooseblock:stripped_satin_wood"
+  },
+  "result": "minecraft:charcoal"
+}
