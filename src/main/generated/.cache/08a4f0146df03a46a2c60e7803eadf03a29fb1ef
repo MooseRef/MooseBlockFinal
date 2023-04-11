@@ -1,6 +1,6 @@
-// 1.19.4	2023-04-07T19:31:41.2268742	MooseBlock/Block Loot Tables
-db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
+// 1.19.4	2023-04-11T08:55:06.8077084	MooseBlock/Block Loot Tables
 f483f99ed86d77d595371c17581fa8413b396f5f data\mooseblock\loot_tables\blocks\potted_purple_rose.json
+db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
 b5586ca6d421982119cc67150aa2506df345fdbd data\mooseblock\loot_tables\blocks\satin_wood.json
 169da3e9603ab8384515674749b2ba74c7bcb577 data\mooseblock\loot_tables\blocks\potted_white_rose.json
 44211c7970e89d8227c892d32d4c5933041a7300 data\mooseblock\loot_tables\blocks\potted_cyan_rose.json
