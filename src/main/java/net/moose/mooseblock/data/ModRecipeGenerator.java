@@ -341,8 +341,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .pattern(" W ")
                 .input('R',ModTags.Items.MOOSE_ROSES)
                 .input('W',Blocks.WITHER_ROSE)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ILL_ROSE),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ILL_ROSE))
+                .criterion(FabricRecipeProvider.hasItem(Blocks.WITHER_ROSE),
+                        FabricRecipeProvider.conditionsFromItem(Blocks.WITHER_ROSE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "ill_rose"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.RAINBOW_ROSE)
@@ -560,15 +560,21 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 
         offerSingleOutputShapelessRecipe(exporter,Items.BLACK_DYE,ModBlocks.BLACK_ROSE,"roses");
+
+
         offerSingleOutputShapelessRecipe(exporter,Items.LIGHT_GRAY_DYE,ModBlocks.WHITE_ROSE,"roses");
         offerSingleOutputShapelessRecipe(exporter,Items.RED_DYE,ModBlocks.RED_ROSE,"roses");
         offerSingleOutputShapelessRecipe(exporter,Items.ORANGE_DYE,ModBlocks.ORANGE_ROSE,"roses");
+
         offerSingleOutputShapelessRecipe(exporter,Items.YELLOW_DYE,ModBlocks.YELLOW_ROSE,"roses");
+
         offerSingleOutputShapelessRecipe(exporter,Items.GREEN_DYE,ModBlocks.ILL_ROSE,"roses");
+
         offerSingleOutputShapelessRecipe(exporter,Items.CYAN_DYE,ModBlocks.CYAN_ROSE,"roses");
         offerSingleOutputShapelessRecipe(exporter,Items.BLUE_DYE,ModBlocks.BLUE_ROSE,"roses");
         offerSingleOutputShapelessRecipe(exporter,Items.PINK_DYE,ModBlocks.PINK_ROSE,"roses");
         offerSingleOutputShapelessRecipe(exporter,Items.PURPLE_DYE,ModBlocks.PURPLE_ROSE,"roses");
+
 
                     }
 

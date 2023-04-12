@@ -14,6 +14,8 @@ public class ModPaintings {
             new PaintingVariant(32,32));
     public static final PaintingVariant NUTWIT = registerPainting("nutwit",
             new PaintingVariant(32,32));
+    public static final PaintingVariant BORPASS = registerPainting("borpass",
+            new PaintingVariant(32,32));
     public static final PaintingVariant PEPPINO = registerPainting("peppino",
             new PaintingVariant(64,48));
 
