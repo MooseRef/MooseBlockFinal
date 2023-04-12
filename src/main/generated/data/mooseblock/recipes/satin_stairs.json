@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
+  "group": "wooden_stairs",
   "key": {
     "X": {
       "item": "mooseblock:satin_planks"

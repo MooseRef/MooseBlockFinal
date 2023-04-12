@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "purple_rose",
+  "ingredients": [
+    {
+      "item": "mooseblock:purple_rose"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_dye"
+  }
+}

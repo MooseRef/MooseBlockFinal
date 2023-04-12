@@ -19,6 +19,9 @@ public class ModPaintings {
     public static final PaintingVariant PEPPINO = registerPainting("peppino",
             new PaintingVariant(64,48));
 
+    public static final PaintingVariant MOOSE_PAINTING = registerPainting("moose_painting",
+            new PaintingVariant(64,48));
+
 
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registries.PAINTING_VARIANT, new Identifier(mooseblock.MOD_ID, name), paintingVariant);

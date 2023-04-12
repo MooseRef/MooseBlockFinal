@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "redstone",
+  "group": "wooden_trapdoor",
   "key": {
     "X": {
       "item": "mooseblock:mood_planks"

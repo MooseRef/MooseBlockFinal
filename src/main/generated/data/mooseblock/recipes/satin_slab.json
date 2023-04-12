@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
+  "group": "wooden_slab",
   "key": {
     "X": {
       "item": "mooseblock:satin_planks"
@@ -12,7 +13,7 @@
     "XXX"
   ],
   "result": {
-    "count": 3,
+    "count": 6,
     "item": "mooseblock:satin_slab"
   },
   "show_notification": true

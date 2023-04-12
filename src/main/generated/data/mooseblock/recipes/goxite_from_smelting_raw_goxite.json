@@ -3,9 +3,8 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.5,
-  "group": "moosite",
   "ingredient": {
-    "item": "mooseblock:raw_goxite"
+    "item": "mooseblock:goxite"
   },
-  "result": "mooseblock:goxite"
+  "result": "mooseblock:raw_goxite"
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:goxite_from_smelting_deepslate_goxite_ore"
+        "recipe": "mooseblock:goxite_from_smelting_deepslate_goxite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:goxite_from_smelting_deepslate_goxite_ore"
+      "mooseblock:goxite_from_smelting_deepslate_goxite_ore"
     ]
   }
 }

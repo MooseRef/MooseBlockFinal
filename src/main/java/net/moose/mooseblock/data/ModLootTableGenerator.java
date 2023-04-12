@@ -33,7 +33,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOOD_FENCE_GATE);
         addDrop(ModBlocks.MOOD_BUTTON);
         addDrop(ModBlocks.MOOD_PRESSURE_PLATE);
-        addDrop(ModBlocks.MOOD_DOOR);
+        addDrop(ModBlocks.MOOD_DOOR, doorDrops(ModBlocks.MOOD_DOOR));
         addDrop(ModBlocks.MOOD_TRAPDOOR);
         addDrop(ModBlocks.MOOD_REDSTONE_LAMP);
 
@@ -56,7 +56,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SATIN_FENCE_GATE);
         addDrop(ModBlocks.SATIN_BUTTON);
         addDrop(ModBlocks.SATIN_PRESSURE_PLATE);
-        addDrop(ModBlocks.SATIN_DOOR);
+        addDrop(ModBlocks.SATIN_DOOR, doorDrops(ModBlocks.SATIN_DOOR));
         addDrop(ModBlocks.SATIN_TRAPDOOR);
 
         addDrop(ModBlocks.SATIN_LEAVES,leavesDrops(ModBlocks.SATIN_LEAVES,ModBlocks.SATIN_SAPLING,SAPLING_DROP_CHANCE));
@@ -90,7 +90,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create().exactMatch(TomatoCropBlock.AGE, 6));
         addDrop(ModBlocks.TOMATO_CROP, this.applyExplosionDecay(ModBlocks.TOMATO_CROP,
-                LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(ModItems.TOMATO)))
+                LootTable.builder().pool(LootPool.builder().with(ItemEntry.builder(ModItems.TOMATO_SEEDS)))
                         .pool(LootPool.builder().conditionally(builder).with(ItemEntry.builder
                                 (ModItems.TOMATO).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286f, 3))))
                         .pool(LootPool.builder().conditionally(builder).with(ItemEntry.builder

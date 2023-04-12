@@ -3,9 +3,8 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.5,
-  "group": "moosite",
   "ingredient": {
-    "item": "mooseblock:raw_borpite"
+    "item": "mooseblock:borpite"
   },
-  "result": "mooseblock:borpite"
+  "result": "mooseblock:raw_borpite"
 }

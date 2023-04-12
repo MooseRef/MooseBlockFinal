@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "mooseblock:gneiss"
+  },
+  "result": "mooseblock:gneiss_slab"
+}

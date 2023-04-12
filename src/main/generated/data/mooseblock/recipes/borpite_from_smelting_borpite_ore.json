@@ -1,11 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "blocks",
   "cookingtime": 200,
   "experience": 0.5,
-  "group": "moosite",
   "ingredient": {
-    "item": "mooseblock:borpite_ore"
+    "item": "mooseblock:borpite"
   },
-  "result": "mooseblock:borpite"
+  "result": "mooseblock:borpite_ore"
 }

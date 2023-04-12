@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-11T11:25:06.921222	MooseBlock/Block Loot Tables
+// 1.19.4	2023-04-12T15:38:43.3867761	MooseBlock/Block Loot Tables
 db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
 f483f99ed86d77d595371c17581fa8413b396f5f data\mooseblock\loot_tables\blocks\potted_purple_rose.json
 b5586ca6d421982119cc67150aa2506df345fdbd data\mooseblock\loot_tables\blocks\satin_wood.json
@@ -11,7 +11,7 @@ b0a158580921f89774cafc9d0c4befbfcfba180d data\mooseblock\loot_tables\blocks\gnei
 7ea0e15777c494ffc11b33c7a9b0e6c874f645f2 data\mooseblock\loot_tables\blocks\deepslate_borpite_ore.json
 1e00de691e1c35eab976721793ba1611f8179c8f data\mooseblock\loot_tables\blocks\block_of_raw_goxite.json
 208f105d155589346b633a39976026a6b04cdd1f data\mooseblock\loot_tables\blocks\potted_rainbow_rose.json
-9f004364235e5ee87fe29d5af3f29b4a0c33a6de data\mooseblock\loot_tables\blocks\tomato_crop.json
+e8e67e1cb680bb6f9f273f166bdfb70488a5e888 data\mooseblock\loot_tables\blocks\tomato_crop.json
 a788a43d26b724f6ce47654584816c41f6579773 data\mooseblock\loot_tables\blocks\gneiss_wall.json
 9e6039722f5301d595cc0d169f9d5e372e806f65 data\mooseblock\loot_tables\blocks\rainbow_rose.json
 e055e7c19bd9b33129bfb0db3666cececcc92f58 data\mooseblock\loot_tables\blocks\gneiss_slab.json
@@ -48,9 +48,9 @@ eeac5606b50c020d22712c396100ab6446c277e9 data\mooseblock\loot_tables\blocks\sati
 f65b7a9be3d1b36ddfe288eaf8c9a28577aba945 data\mooseblock\loot_tables\blocks\pink_rose.json
 a639e3a086734274114923ef2e1776426e120d73 data\mooseblock\loot_tables\blocks\mood_trapdoor.json
 ab6c678a98877f7fad41107914981039e87de447 data\mooseblock\loot_tables\blocks\blue_rose.json
-ef498ea3bada903421ae0100e1a67da650a0780b data\mooseblock\loot_tables\blocks\mood_door.json
+ffd2ff92ba549f505291802ce1a4c9bb16df6d0d data\mooseblock\loot_tables\blocks\mood_door.json
 72c013f63fce551cba1de78ccfd6d082a14f00c1 data\mooseblock\loot_tables\blocks\potted_orange_rose.json
-567d0159e3f0197d18840a4c4d44a1c9bf2510ed data\mooseblock\loot_tables\blocks\satin_door.json
+1369601c4ee9efa86923eb3779bf5085ff954e43 data\mooseblock\loot_tables\blocks\satin_door.json
 85ee981e907778aed3ae732d38ee50583ce884ff data\mooseblock\loot_tables\blocks\deepslate_goxite_ore.json
 fdd9727492cff879d18953bc5cc59c02e4547805 data\mooseblock\loot_tables\blocks\satin_fence_gate.json
 84afe30275a1fbcbf2b489cfff05158c1fcc48e5 data\mooseblock\loot_tables\blocks\mood_leaves.json

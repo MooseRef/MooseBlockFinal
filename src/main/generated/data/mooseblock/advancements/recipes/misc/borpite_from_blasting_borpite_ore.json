@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:borpite_from_blasting_borpite_ore"
+        "recipe": "mooseblock:borpite_from_blasting_borpite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:borpite_from_blasting_borpite_ore"
+      "mooseblock:borpite_from_blasting_borpite_ore"
     ]
   }
 }

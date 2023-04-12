@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:moosite_from_blasting_deepslate_moosite_ore"
+        "recipe": "mooseblock:moosite_from_blasting_deepslate_moosite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:moosite_from_blasting_deepslate_moosite_ore"
+      "mooseblock:moosite_from_blasting_deepslate_moosite_ore"
     ]
   }
 }

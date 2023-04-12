@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:goxite_from_blasting_raw_goxite"
+        "recipe": "mooseblock:goxite_from_blasting_raw_goxite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:goxite_from_blasting_raw_goxite"
+      "mooseblock:goxite_from_blasting_raw_goxite"
     ]
   }
 }

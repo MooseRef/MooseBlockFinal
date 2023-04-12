@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
   "key": {
     "X": {
       "item": "mooseblock:mood_planks"

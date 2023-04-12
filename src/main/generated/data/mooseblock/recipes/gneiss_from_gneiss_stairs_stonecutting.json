@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "mooseblock:gneiss_stairs"
-  },
-  "result": "mooseblock:gneiss"
-}

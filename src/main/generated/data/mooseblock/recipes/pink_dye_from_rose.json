@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "pink_rose",
+  "ingredients": [
+    {
+      "item": "mooseblock:pink_rose"
+    }
+  ],
+  "result": {
+    "item": "minecraft:pink_dye"
+  }
+}

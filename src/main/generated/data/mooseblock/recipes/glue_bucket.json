@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
     "W": {
       "item": "minecraft:water_bucket"
     },
@@ -12,7 +15,7 @@
   "pattern": [
     "XXX",
     "XWX",
-    "XXX"
+    "XBX"
   ],
   "result": {
     "item": "mooseblock:glue_bucket"
