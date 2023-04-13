@@ -221,86 +221,86 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "satin_trapdoor"));
 
 
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModItems.RAW_GOXITE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,
                 0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RAW_GOXITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RAW_GOXITE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_smelting_raw_goxite"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModItems.RAW_GOXITE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.RAW_GOXITE), RecipeCategory.MISC, ModItems.GOXITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RAW_GOXITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RAW_GOXITE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_blasting_raw_goxite"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModBlocks.GOXITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.GOXITE_ORE), RecipeCategory.MISC, ModItems.GOXITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.GOXITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.GOXITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_smelting_goxite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModBlocks.GOXITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.GOXITE_ORE), RecipeCategory.MISC, ModItems.GOXITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.GOXITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.GOXITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_blasting_goxite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_GOXITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_GOXITE_ORE), RecipeCategory.MISC, ModItems.GOXITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_GOXITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_GOXITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_smelting_deepslate_goxite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOXITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_GOXITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_GOXITE_ORE), RecipeCategory.MISC, ModItems.GOXITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_GOXITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_GOXITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "goxite_from_blasting_deepslate_goxite_ore"));
 
 
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModItems.RAW_BORPITE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.RAW_BORPITE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RAW_BORPITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RAW_BORPITE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_smelting_raw_borpite"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModItems.RAW_BORPITE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.RAW_BORPITE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RAW_BORPITE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.RAW_BORPITE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_blasting_raw_borpite"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModBlocks.BORPITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.BORPITE_ORE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.BORPITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.BORPITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_smelting_borpite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModBlocks.BORPITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.BORPITE_ORE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.BORPITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.BORPITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_blasting_borpite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_BORPITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_BORPITE_ORE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_BORPITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_BORPITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_smelting_deepslate_borpite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.BORPITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_BORPITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_BORPITE_ORE), RecipeCategory.MISC, ModItems.BORPITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_BORPITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_BORPITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "borpite_from_blasting_deepslate_borpite_ore"));
 
 
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.MOOSITE), RecipeCategory.MISC, ModBlocks.MOOSITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.MOOSITE_ORE), RecipeCategory.MISC, ModItems.MOOSITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOSITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOSITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "moosite_from_smelting_moosite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.MOOSITE), RecipeCategory.MISC, ModBlocks.MOOSITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.MOOSITE_ORE), RecipeCategory.MISC, ModItems.MOOSITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.MOOSITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.MOOSITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "moosite_from_blasting_moosite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.MOOSITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_MOOSITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_MOOSITE_ORE), RecipeCategory.MISC, ModItems.MOOSITE,
                         0.5f,200, RecipeSerializer.SMELTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_MOOSITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_MOOSITE_ORE))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "moosite_from_smelting_deepslate_moosite_ore"));
-        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.MOOSITE), RecipeCategory.MISC, ModBlocks.DEEPSLATE_MOOSITE_ORE,
+        CookingRecipeJsonBuilder.create(Ingredient.ofItems(ModBlocks.DEEPSLATE_MOOSITE_ORE), RecipeCategory.MISC, ModItems.MOOSITE,
                         0.5f,100, RecipeSerializer.BLASTING)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEPSLATE_MOOSITE_ORE),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEPSLATE_MOOSITE_ORE))

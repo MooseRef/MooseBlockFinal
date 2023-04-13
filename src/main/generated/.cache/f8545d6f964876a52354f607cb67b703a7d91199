@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-12T15:38:43.3797743	MooseBlock/Model Definitions
+// 1.19.4	2023-04-12T19:27:33.3408355	MooseBlock/Model Definitions
 c368840a5ce6d0911fb361767bff7991cba9782f assets\mooseblock\models\block\potted_satin_sapling.json
 abe57b475c93dc83dff7be0b5b90a491963af46e assets\mooseblock\models\item\satin_log.json
 52bcee21a825669436c02def1bac985b000abdb3 assets\mooseblock\models\item\rainbow_rose.json
@@ -37,8 +37,8 @@ e3792b30c1d89d9cc0161bb190ba2110be8e453d assets\mooseblock\models\item\raw_borpi
 0ed87735a8f01526fc83ec4c8259d345b908cbfc assets\mooseblock\models\block\satin_leaves.json
 5374859e03d9ee4b61a34c309b531be3e32e3a34 assets\mooseblock\models\item\borpite_sword.json
 10e0505248d161d50e40d0c25e32d17bca320ea4 assets\mooseblock\models\item\dice_cube.json
-bda1e4566dd31f77a16dae01da30bca2ee2ebd56 assets\mooseblock\blockstates\mood_planks.json
 3d11da682a3a8a468fcaab608b15e6974fa97075 assets\mooseblock\blockstates\potted_white_rose.json
+bda1e4566dd31f77a16dae01da30bca2ee2ebd56 assets\mooseblock\blockstates\mood_planks.json
 78486af5cb5201a5fec3163d1184eee6318c9897 assets\mooseblock\models\block\white_rose.json
 bc9590f8916e28800984cb52ad9767ad939d8484 assets\mooseblock\models\block\deepslate_moosite_ore.json
 04732fd7542375386a980077892a05ef73794f13 assets\mooseblock\models\item\borpite.json
@@ -58,8 +58,8 @@ b41cc2f1c247bb86d2c50eb3f60a50bf8e268f6b assets\mooseblock\models\item\blue_rose
 36a248fd709dd7b78437fa8a67871cd44647854b assets\mooseblock\models\item\deepslate_goxite_ore.json
 9cdc30bd48625e929d20e8cbc03e3d70ff27d536 assets\mooseblock\models\block\satin_trapdoor_bottom.json
 d8f8682184e33ee94a16f53fea7068c35f15a881 assets\mooseblock\models\item\borpite_pickaxe.json
-c88d56d667784e557724471de04594b8be3c3215 assets\mooseblock\models\item\goxite_boots.json
 5a85c8581f9925d804e50e2abcf003742c221715 assets\mooseblock\models\item\moosite_boots.json
+c88d56d667784e557724471de04594b8be3c3215 assets\mooseblock\models\item\goxite_boots.json
 048aebb846ea03271e29ece58d1cd9756cb0f0d4 assets\mooseblock\blockstates\potted_satin_sapling.json
 51810d5a62529efc31b6caa3adb5fd5c52d4e612 assets\mooseblock\blockstates\block_of_raw_goxite.json
 5298de5adbfc581644034a192325afd2504b7b69 assets\mooseblock\models\item\goxite_ore.json
@@ -131,8 +131,8 @@ b5247aa37f49622ee0518f66e7799976d0f05f9d assets\mooseblock\models\item\red_rose.
 70a4616d1b8ebe82ac635602633dd34395cefcd2 assets\mooseblock\models\block\potted_rainbow_rose.json
 e6c0db10e60cde8a0baeac12ec3776e6348bfa21 assets\mooseblock\blockstates\purple_rose.json
 986c34adbcdcc365d37e5993b638f6d6979a1744 assets\mooseblock\models\block\stripped_satin_log.json
-f42f2421d9592e5b201a79e305d87349995a7ebb assets\mooseblock\blockstates\potted_orange_rose.json
 34fe13536c9f0c98c68b2ed9f80ea84b776ba54b assets\mooseblock\models\block\potted_white_rose.json
+f42f2421d9592e5b201a79e305d87349995a7ebb assets\mooseblock\blockstates\potted_orange_rose.json
 bafef8c4a54fc5ed6b92f6e1c7c2ff513633870a assets\mooseblock\models\item\deepslate_moosite_ore.json
 879d89195526fb1087831e2352849bf9df6130a0 assets\mooseblock\models\block\borpite_ore.json
 18c863c38b5981efdc9f696221999e6a590dde1d assets\mooseblock\models\item\goxite_axe.json

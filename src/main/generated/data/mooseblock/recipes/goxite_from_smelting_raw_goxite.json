@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "item": "mooseblock:goxite"
+    "item": "mooseblock:raw_goxite"
   },
-  "result": "mooseblock:raw_goxite"
+  "result": "mooseblock:goxite"
 }

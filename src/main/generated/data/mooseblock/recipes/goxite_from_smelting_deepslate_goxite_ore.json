@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "blocks",
+  "category": "misc",
   "cookingtime": 200,
   "experience": 0.5,
   "ingredient": {
-    "item": "mooseblock:goxite"
+    "item": "mooseblock:deepslate_goxite_ore"
   },
-  "result": "mooseblock:deepslate_goxite_ore"
+  "result": "mooseblock:goxite"
 }
