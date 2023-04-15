@@ -32,6 +32,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MOOSITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOCK_OF_MOOSITE);
 
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ONYX_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BUDDING_ONYX);
+
+        // manually done for now, this lacks direction
+        //blockStateModelGenerator.registerTintableCross(ModBlocks.ONYX_CLUSTER,BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerTintableCross(ModBlocks.LARGE_ONYX_BUD,BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerTintableCross(ModBlocks.MEDIUM_ONYX_BUD,BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerTintableCross(ModBlocks.SMALL_ONYX_BUD,BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerLog(ModBlocks.MOOD_LOG).log(ModBlocks.MOOD_LOG).wood(ModBlocks.MOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MOOD_LOG).log(ModBlocks.STRIPPED_MOOD_LOG).wood(ModBlocks.STRIPPED_MOOD_WOOD);
 

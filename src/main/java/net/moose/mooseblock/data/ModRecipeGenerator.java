@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.*;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
@@ -16,7 +15,6 @@ import net.moose.mooseblock.item.ModItems;
 import net.moose.mooseblock.mooseblock;
 import net.moose.mooseblock.util.ModTags;
 
-import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends FabricRecipeProvider {
@@ -636,6 +634,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(ModBlocks.GNEISS), RecipeCategory.BUILDING_BLOCKS,ModBlocks.POLISHED_GNEISS_WALL,1)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.GNEISS), FabricRecipeProvider.conditionsFromItem(ModBlocks.GNEISS))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID,"polished_gneiss_wall_from_stonecutting"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ONYX_BLOCK)
+                .pattern("XX ")
+                .pattern("XX ")
+                .pattern("   ")
+                .input('X', ModItems.ONYX_SHARD)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ONYX_SHARD),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ONYX_SHARD))
+                .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "onyx_block"));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.GLUE_BUCKET)
                 .pattern("XXX")

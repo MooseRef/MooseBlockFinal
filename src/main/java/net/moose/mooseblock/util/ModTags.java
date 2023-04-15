@@ -10,7 +10,6 @@ import net.moose.mooseblock.mooseblock;
 public class ModTags {
     public static class Blocks {
 
-
         public static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(mooseblock.MOD_ID, name));
         }

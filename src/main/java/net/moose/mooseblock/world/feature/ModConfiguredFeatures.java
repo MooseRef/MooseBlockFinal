@@ -1,5 +1,6 @@
 package net.moose.mooseblock.world.feature;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -8,6 +9,7 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
@@ -15,6 +17,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.mooseblock;
+import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
 import java.util.List;
 
@@ -37,6 +40,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_ROSE_KEY = registerKey("blue_rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_ROSE_KEY = registerKey("pink_rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PURPLE_ROSE_KEY = registerKey("purple_rose");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ONYX_GEODE_KEY = registerKey("onyx_geode");
 
 
 
@@ -111,6 +115,25 @@ public class ModConfiguredFeatures {
         register(context, PURPLE_ROSE_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_ROSE)))));
+
+        register(context, ONYX_GEODE_KEY, Feature.GEODE,
+                new GeodeFeatureConfig(new GeodeLayerConfig(BlockStateProvider.of(Blocks.AIR),
+                        BlockStateProvider.of(ModBlocks.ONYX_BLOCK),  //non budding
+                        BlockStateProvider.of(ModBlocks.BUDDING_ONYX), //budding
+                        BlockStateProvider.of(Blocks.CALCITE),      //calcite
+                        BlockStateProvider.of(ModBlocks.POLISHED_GNEISS),      //smooth basalt
+                        List.of(ModBlocks.SMALL_ONYX_BUD.getDefaultState(),
+                                ModBlocks.MEDIUM_ONYX_BUD.getDefaultState(),
+                                ModBlocks.LARGE_ONYX_BUD.getDefaultState(),
+                                ModBlocks.ONYX_CLUSTER.getDefaultState()), // buds
+                        BlockTags.FEATURES_CANNOT_REPLACE, BlockTags.GEODE_INVALID_BLOCKS),
+                        new GeodeLayerThicknessConfig(1.50, 2.20, 3.20,4.20),
+                        new GeodeCrackConfig(0.50, 2.0,2),
+                        0.35,0.44,true, UniformIntProvider.create(4,6),
+                        UniformIntProvider.create(3,4), UniformIntProvider.create(1,2),
+                        -15,15,0.025, 1));
+
+
 
     }
 

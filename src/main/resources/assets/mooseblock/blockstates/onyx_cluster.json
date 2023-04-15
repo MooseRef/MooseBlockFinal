@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "mooseblock:block/onyx_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "mooseblock:block/onyx_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mooseblock:block/onyx_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "mooseblock:block/onyx_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "mooseblock:block/onyx_cluster"
+    },
+    "facing=west": {
+      "model": "mooseblock:block/onyx_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

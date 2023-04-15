@@ -28,6 +28,12 @@ public class mooseblockclient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
         EntityRendererRegistry.register(ModEntities.MOOSE, MooseRenderer::new);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ONYX_CLUSTER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LARGE_ONYX_BUD, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MEDIUM_ONYX_BUD, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SMALL_ONYX_BUD, RenderLayer.getCutout());
+
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLACK_ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_ROSE, RenderLayer.getCutout());

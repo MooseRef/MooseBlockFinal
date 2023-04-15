@@ -33,6 +33,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PINK_ROSE_PLACED_KEY = registerKey("pink_rose_placed");
     public static final RegistryKey<PlacedFeature> PURPLE_ROSE_PLACED_KEY = registerKey("purple_rose_placed");
 
+    public static final RegistryKey<PlacedFeature> ONYX_GEODE_PLACED_KEY = registerKey("onyx_geode_placed");
+
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -85,6 +87,10 @@ public class ModPlacedFeatures {
         register(context, PURPLE_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PURPLE_ROSE_KEY),
                 RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
                 BiomePlacementModifier.of());
+
+        register(context, ONYX_GEODE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ONYX_GEODE_KEY),
+                RarityFilterPlacementModifier.of(50), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(
+                        YOffset.aboveBottom(6),YOffset.aboveBottom(60)), BiomePlacementModifier.of());
 
     }
 

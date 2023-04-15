@@ -23,6 +23,13 @@
     "mooseblock:polished_gneiss_slab",
     "mooseblock:polished_gneiss_wall",
 
+    "mooseblock:onyx_block",
+    "mooseblock:budding_onyx",
+    "mooseblock:onyx_cluster",
+    "mooseblock:large_onyx_bud",
+    "mooseblock:medium_onyx_bud",
+    "mooseblock:small_onyx_bud",
+
     "mooseblock:mood_redstone_lamp"
 
   ]

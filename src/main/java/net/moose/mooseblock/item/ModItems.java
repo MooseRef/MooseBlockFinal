@@ -54,6 +54,9 @@ public class ModItems {
     public static final Item MOOSITE_AXE = registerItem("moosite_axe", new ModAxeItem(ModToolMaterial.MOOSITE, 5.0f, -3.0f, new FabricItemSettings().fireproof()));
     public static final Item MOOSITE_HOE = registerItem("moosite_hoe", new ModHoeItem(ModToolMaterial.MOOSITE, -3, 0.0f, new FabricItemSettings().fireproof()));
 
+
+    public static final Item ONYX_SHARD = registerItem("onyx_shard", new Item(new FabricItemSettings()));
+
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(1).saturationModifier(1f).build())));
     public static final Item GOLDEN_TOMATO = registerItem("golden_tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(4).saturationModifier(1.2f).statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1200,0),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 200,0),1.0f).build())));
@@ -113,6 +116,8 @@ public class ModItems {
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_AXE);
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_PICKAXE);
         addToItemGroup(ModItemGroups.MOOSITE, MOOSITE_HOE);
+
+        addToItemGroup(ModItemGroups.MOOSITE, ONYX_SHARD);
 
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO_SEEDS);
         addToItemGroup(ModItemGroups.MOOSITE, TOMATO);

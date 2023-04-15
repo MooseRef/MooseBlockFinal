@@ -1,4 +1,4 @@
-// 1.19.4	2023-04-12T19:27:33.3478371	MooseBlock/Block Loot Tables
+// 1.19.4	2023-04-14T15:17:38.9699481	MooseBlock/Block Loot Tables
 db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
 f483f99ed86d77d595371c17581fa8413b396f5f data\mooseblock\loot_tables\blocks\potted_purple_rose.json
 b5586ca6d421982119cc67150aa2506df345fdbd data\mooseblock\loot_tables\blocks\satin_wood.json
@@ -16,6 +16,7 @@ a788a43d26b724f6ce47654584816c41f6579773 data\mooseblock\loot_tables\blocks\gnei
 9e6039722f5301d595cc0d169f9d5e372e806f65 data\mooseblock\loot_tables\blocks\rainbow_rose.json
 e055e7c19bd9b33129bfb0db3666cececcc92f58 data\mooseblock\loot_tables\blocks\gneiss_slab.json
 6feecf24909e765b1654d960a4da40749477adc0 data\mooseblock\loot_tables\blocks\stripped_satin_wood.json
+0be67955960a7de08c08dea1489877daa31dd785 data\mooseblock\loot_tables\blocks\small_onyx_bud.json
 052b3aa7d6853f6a3cc4af60732430defe98ec2f data\mooseblock\loot_tables\blocks\deepslate_moosite_ore.json
 b93c7de177468a202aa9bf4b0ea1835b3a236c9e data\mooseblock\loot_tables\blocks\polished_gneiss_slab.json
 c369080632614c4112a3cf4cb9e8edecbe217274 data\mooseblock\loot_tables\blocks\gneiss.json
@@ -36,11 +37,14 @@ abf420bdb30c6a019cd10ecdce214a70bc7f92f5 data\mooseblock\loot_tables\blocks\yell
 309172cce86c1e4696b27d70bccf9c46b5d3ee80 data\mooseblock\loot_tables\blocks\mood_log.json
 03d67d4106d50554515bba8b07d5b8a18e69b231 data\mooseblock\loot_tables\blocks\ill_rose.json
 c6cd4d8a785e9b97c42bc627089e931ae36deb7c data\mooseblock\loot_tables\blocks\purple_rose.json
+1be509f021220f951b526298500012b1a29ccfb0 data\mooseblock\loot_tables\blocks\onyx_block.json
 6dc54a18f1188ea9157e84172844543a5482c1f2 data\mooseblock\loot_tables\blocks\potted_satin_sapling.json
 f31e9b2f2c1151ed98763e4c49ca09f5a2acfe57 data\mooseblock\loot_tables\blocks\satin_fence.json
 cf5043cb737cab5c9957183e3eb4b742bf7f7871 data\mooseblock\loot_tables\blocks\mood_slab.json
 268c73fd7017cd15a98c0b652b6e92733c644a50 data\mooseblock\loot_tables\blocks\mood_stairs.json
 2376b24c82eb7b715b654a82e7eeb4b028706b59 data\mooseblock\loot_tables\blocks\block_of_goxite.json
+7c5409ea94807ca90e963f353fe5003f38725a1a data\mooseblock\loot_tables\blocks\medium_onyx_bud.json
+9304834471a7bab0ef9e9e4a197ecae28d25760b data\mooseblock\loot_tables\blocks\large_onyx_bud.json
 d985f0bfc8a73f267d2683089ae63e522eadcfc3 data\mooseblock\loot_tables\blocks\mood_planks.json
 56d0c99ff40062a7710976b175769729202417cb data\mooseblock\loot_tables\blocks\black_rose.json
 1c8b3cfe67b4641888f0af80de8ff3a50f522dd5 data\mooseblock\loot_tables\blocks\polished_gneiss_stairs.json

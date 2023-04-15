@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "mooseblock:block/medium_onyx_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "mooseblock:block/medium_onyx_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "mooseblock:block/medium_onyx_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "mooseblock:block/medium_onyx_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "mooseblock:block/medium_onyx_bud"
+    },
+    "facing=west": {
+      "model": "mooseblock:block/medium_onyx_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
