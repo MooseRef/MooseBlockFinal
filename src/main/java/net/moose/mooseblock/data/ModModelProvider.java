@@ -136,6 +136,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOOSITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOOSITE_PICKAXE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.ONYX_SHARD, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.TOMATO_SEEDS, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDEN_TOMATO, Models.GENERATED);

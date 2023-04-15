@@ -82,11 +82,11 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
-        register(context, GOXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldGoxite, 7));
-        register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 5));
+        register(context, GOXITE_KEY, Feature.ORE, new OreFeatureConfig(overworldGoxite, 5));
+        register(context, BORPITE_KEY, Feature.ORE, new OreFeatureConfig(overworldBorpite, 4));
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
 
-        register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 18));
+        register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 12));
 
         register(context, BLACK_ROSE_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
@@ -129,7 +129,7 @@ public class ModConfiguredFeatures {
                         BlockTags.FEATURES_CANNOT_REPLACE, BlockTags.GEODE_INVALID_BLOCKS),
                         new GeodeLayerThicknessConfig(1.50, 2.20, 3.20,4.20),
                         new GeodeCrackConfig(0.50, 2.0,2),
-                        0.35,0.44,true, UniformIntProvider.create(4,6),
+                        0.20,0.11,true, UniformIntProvider.create(4,6),
                         UniformIntProvider.create(3,4), UniformIntProvider.create(1,2),
                         -15,15,0.025, 1));
 
