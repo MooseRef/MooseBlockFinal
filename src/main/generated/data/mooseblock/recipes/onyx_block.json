@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "mooseblock:onyx_shard"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XX ",
+    "   "
+  ],
+  "result": {
+    "item": "mooseblock:onyx_block"
+  },
+  "show_notification": true
+}
