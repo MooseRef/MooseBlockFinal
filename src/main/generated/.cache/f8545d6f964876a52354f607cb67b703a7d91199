@@ -1,7 +1,8 @@
-// 1.19.4	2023-04-15T12:52:29.8204226	MooseBlock/Model Definitions
+// 1.19.4	2023-04-15T15:04:25.5681815	MooseBlock/Model Definitions
 c368840a5ce6d0911fb361767bff7991cba9782f assets\mooseblock\models\block\potted_satin_sapling.json
 abe57b475c93dc83dff7be0b5b90a491963af46e assets\mooseblock\models\item\satin_log.json
 52bcee21a825669436c02def1bac985b000abdb3 assets\mooseblock\models\item\rainbow_rose.json
+eb1dd0e54f14476177e83974326065e77f5907a4 assets\mooseblock\models\item\strawberry.json
 243ab2d50155933b3db225ac03acb195f78ca933 assets\mooseblock\models\item\mood_leaves.json
 1d19cc80cccb7837b936e9a3f35703247d2c0653 assets\mooseblock\blockstates\mood_sapling.json
 3901b5c9b6b85efca203f802704f951b74730723 assets\mooseblock\blockstates\goxite_ore.json

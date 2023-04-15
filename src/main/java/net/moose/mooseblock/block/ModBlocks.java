@@ -673,6 +673,13 @@ public class ModBlocks {
                     .copy(Blocks.WHEAT)),
             ModItemGroups.MOOSITE);
 
+    public static final Block STRAWBERRY_BUSH
+            = registerBlockWithoutItem("strawberry_bush",
+            new StrawberryBushBlock(FabricBlockSettings
+                    .copyOf(Blocks.SWEET_BERRY_BUSH)),
+            ModItemGroups.MOOSITE);
+
+
     public static final Block VISION_PAD
             = registerBlock("vision_pad",
             new NightVisionBlock(FabricBlockSettings

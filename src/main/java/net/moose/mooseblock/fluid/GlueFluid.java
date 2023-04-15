@@ -90,6 +90,7 @@ public abstract class GlueFluid extends FlowableFluid {
         return ModFluids.GLUE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
+
     @Override
     public boolean isStill(FluidState state) {
         return false;

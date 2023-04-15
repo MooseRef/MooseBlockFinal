@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mooseblock:block/strawberry_bush_stage3"
+  }
+}

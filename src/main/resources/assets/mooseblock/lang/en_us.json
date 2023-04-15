@@ -43,6 +43,8 @@
   "item.mooseblock.rotten_tomato" : "Rotten Tomato",
   "item.mooseblock.tomato_soup" : "Tomato Soup",
 
+  "item.mooseblock.strawberry": "Strawberry",
+
 
   "item.mooseblock.dice_cube" : "Dice Cube",
   "item.mooseblock.dice_dodecahedron" : "Dice Dodecahedron",
@@ -122,6 +124,8 @@
   "block.mooseblock.small_onyx_bud": "Small Onyx Bud",
 
   "block.mooseblock.tomato_crop": "Tomato Crop",
+
+  "block.mooseblock.strawberry_bush": "Strawberry Bush",
 
   "block.mooseblock.mood_sapling": "Mood Sapling",
   "block.mooseblock.potted_mood_sapling": "Potted Mood Sapling",
