@@ -3,7 +3,6 @@ package net.moose.mooseblock.entity.goals;
 import net.minecraft.entity.ai.goal.Goal;
 import net.minecraft.util.math.BlockPos;
 import net.moose.mooseblock.entity.custom.RaccoonEntity;
-import net.moose.mooseblock.mooseblock;
 
 public class JumpInComposterGoal extends Goal {
 

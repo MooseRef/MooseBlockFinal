@@ -671,6 +671,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.TOMATO))
                 .offerTo(exporter, new Identifier(mooseblock.MOD_ID, "golden_tomato"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,Items.RED_DYE, 1)
+                .input(ModItems.STRAWBERRY).criterion("has_strawberry",
+                        FabricRecipeProvider.conditionsFromItem(ModItems.STRAWBERRY)).group("red_dye");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ILL_ROSE)
                 .pattern("   ")

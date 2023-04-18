@@ -13,7 +13,6 @@ import net.minecraft.predicate.StatePredicate;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.block.custom.TomatoCropBlock;
 import net.moose.mooseblock.item.ModItems;
-import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
 public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     public ModLootTableGenerator(FabricDataOutput dataOutput) {

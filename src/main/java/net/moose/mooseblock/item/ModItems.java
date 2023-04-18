@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.moose.mooseblock.block.ModBlocks;
+//import net.moose.mooseblock.entity.ModEntities;
 import net.moose.mooseblock.entity.ModEntities;
 import net.moose.mooseblock.item.custom.DiceCubeItem;
 import net.moose.mooseblock.item.custom.DiceDodecahedronItem;

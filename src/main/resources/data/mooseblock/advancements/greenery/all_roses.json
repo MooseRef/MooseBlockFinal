@@ -132,6 +132,18 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "rosebush": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rose_bush"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -182,6 +194,9 @@
     ],
     [
       "white"
+    ],
+    [
+      "rosebush"
     ]
   ],
   "rewards": {
