@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "mooseblock:vision_pad"
+    },
+    "title": {
+      "translate": "advancements.metals.vision_pad.title"
+    },
+    "description": {
+      "translate": "advancements.metals.vision_pad.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mooseblock:metals/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:vision_pad"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

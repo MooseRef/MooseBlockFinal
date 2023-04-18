@@ -159,10 +159,27 @@
 
   "enchantment.mooseblock.frost": "Frost",
 
-  "itemgroup.moosite": "Moosium"
+  "itemgroup.moosite": "Moosium",
 
+  "advancements.greenery.root.title": "Greenery",
+  "advancements.greenery.root.description" : "Discover new flora and fauna",
+  "advancements.greenery.all_roses.title": "Rose Garden",
+  "advancements.greenery.all_roses.description" : "Collect one of every rose in the world!",
+  "advancements.greenery.new_planks.title": "A Whole New Wood",
+  "advancements.greenery.new_planks.description" : "Find both Mood and Satin logs",
 
-
-
-
+  "advancements.metals.root.title": "Exploration",
+  "advancements.metals.root.description" : "Leave no Cobblestone unturned",
+  "advancements.metals.borpite.title": "Borpin Up",
+  "advancements.metals.borpite.description" : "Smelt a Borpite Ingot",
+  "advancements.metals.borpite_hoe.title": "Borpass",
+  "advancements.metals.borpite_hoe.description" : "Craft a Borpite Hoe",
+  "advancements.metals.goxite.title": "Go Go Goxite",
+  "advancements.metals.goxite.description" : "Smelt a Goxite Ingot",
+  "advancements.metals.goxite_armor.title": "PVP God?",
+  "advancements.metals.goxite_armor.description" : "Get a full set of Goxite armor",
+  "advancements.metals.moosite_armor.title": "Maximum Moose",
+  "advancements.metals.moosite_armor.description" : "Get a full set of Moosite armor",
+  "advancements.metals.vision_pad.title": "Light in the Dark",
+  "advancements.metals.vision_pad.description" : "Find a Vision Pad"
 }

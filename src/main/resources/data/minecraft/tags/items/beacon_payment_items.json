@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "replace": false,
+      "values": [
+        "mooseblock:goxite",
+        "mooseblock:borpite",
+        "mooseblock:moosite"
+      ]
+    }
+
+  ]
+}

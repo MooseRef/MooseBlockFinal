@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:potted_mood_sapling",
+    "mooseblock:potted_satin_sapling",
+    "mooseblock:potted_red_rose",
+    "mooseblock:potted_orange_rose",
+    "mooseblock:potted_yellow_rose",
+    "mooseblock:potted_ill_rose",
+    "mooseblock:potted_cyan_rose",
+    "mooseblock:potted_blue_rose",
+    "mooseblock:potted_pink_rose",
+    "mooseblock:potted_purple_rose",
+    "mooseblock:potted_rainbow_rose",
+    "mooseblock:potted_black_rose",
+    "mooseblock:potted_white_rose"
+  ]
+}

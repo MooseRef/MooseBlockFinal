@@ -655,6 +655,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings
                     .of(Material.STONE)
                     .strength(4.0f,4.0f)
+                    .strength(4.0f,4.0f)
                     .requiresTool(),
                     UniformIntProvider.create(3,7)),
             ModItemGroups.MOOSITE);
@@ -668,7 +669,7 @@ public class ModBlocks {
 
 
     public static final Block TOMATO_CROP
-            = registerBlockWithoutItem("tomato_crop",
+            = registerBlockWithoutItem("tomato",
             new TomatoCropBlock(FabricBlockSettings
                     .copy(Blocks.WHEAT)),
             ModItemGroups.MOOSITE);

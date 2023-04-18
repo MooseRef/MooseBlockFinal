@@ -1,6 +1,6 @@
-// 1.19.4	2023-04-15T15:04:25.5781845	MooseBlock/Block Loot Tables
-db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
+// 1.19.4	2023-04-17T15:51:22.6769372	MooseBlock/Block Loot Tables
 f483f99ed86d77d595371c17581fa8413b396f5f data\mooseblock\loot_tables\blocks\potted_purple_rose.json
+db5291a52c1682d1e865390a43bdb29935963b43 data\mooseblock\loot_tables\blocks\satin_pressure_plate.json
 b5586ca6d421982119cc67150aa2506df345fdbd data\mooseblock\loot_tables\blocks\satin_wood.json
 169da3e9603ab8384515674749b2ba74c7bcb577 data\mooseblock\loot_tables\blocks\potted_white_rose.json
 44211c7970e89d8227c892d32d4c5933041a7300 data\mooseblock\loot_tables\blocks\potted_cyan_rose.json
@@ -60,8 +60,8 @@ fdd9727492cff879d18953bc5cc59c02e4547805 data\mooseblock\loot_tables\blocks\sati
 84afe30275a1fbcbf2b489cfff05158c1fcc48e5 data\mooseblock\loot_tables\blocks\mood_leaves.json
 46ccc92022bc01cd49ec1804b211a55341e1deaf data\mooseblock\loot_tables\blocks\potted_blue_rose.json
 5cf1e012e3bd267691a787b756082c2ec65196bb data\mooseblock\loot_tables\blocks\satin_log.json
-a80cbc7d1fd7f97b4555ec5eeaefb5d00da50e43 data\mooseblock\loot_tables\blocks\polished_gneiss.json
 962c7137c419814d2bb5a400efc5efe8597839e7 data\mooseblock\loot_tables\blocks\goxite_ore.json
+a80cbc7d1fd7f97b4555ec5eeaefb5d00da50e43 data\mooseblock\loot_tables\blocks\polished_gneiss.json
 33e2b29844fab6e4bb865a5ca235fd56e5c1d389 data\mooseblock\loot_tables\blocks\mood_wood.json
 eb77cec52abdede9f7df17181910b0c825af1796 data\mooseblock\loot_tables\blocks\potted_yellow_rose.json
 90697044ff11a9ff8db106ba911791fe97cc901d data\mooseblock\loot_tables\blocks\mood_sapling.json
@@ -75,7 +75,7 @@ a7773ceff746a74bfd647b5d5d60f4bcdac80c69 data\mooseblock\loot_tables\blocks\mood
 845eb7868673ec4dbeca9a99db0c176cb54a3295 data\mooseblock\loot_tables\blocks\potted_red_rose.json
 2ae9d396fc891990120a5981d93b111adae54ffd data\mooseblock\loot_tables\blocks\satin_planks.json
 0fc75c26c30ae407f52a499d5f3cae86ce19717e data\mooseblock\loot_tables\blocks\stripped_mood_log.json
-08ad9e8eed40c57e1ad39891699a0f60ae06cf96 data\mooseblock\loot_tables\blocks\mood_redstone_lamp.json
 bedd0d1483343765972085726abbe3ca67245813 data\mooseblock\loot_tables\blocks\block_of_raw_borpite.json
+08ad9e8eed40c57e1ad39891699a0f60ae06cf96 data\mooseblock\loot_tables\blocks\mood_redstone_lamp.json
 228668589d9f5661bd8a571802f5cc3704abe51a data\mooseblock\loot_tables\blocks\potted_ill_rose.json
 d254c1847f160b6af8d1f9882b5f2902e889c1b8 data\mooseblock\loot_tables\blocks\satin_slab.json

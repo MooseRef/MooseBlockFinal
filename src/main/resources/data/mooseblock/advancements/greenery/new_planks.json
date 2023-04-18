@@ -1,0 +1,52 @@
+{
+  "parent": "mooseblock:greenery/root",
+  "criteria": {
+    "mood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:mood_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "satin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:satin_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.greenery.new_planks.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mooseblock:mood_planks"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.greenery.new_planks.title"
+    }
+  },
+  "requirements": [
+    [
+      "mood"
+    ],
+    [
+      "satin"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "mooseblock:textures/block/mood_planks.png",
+    "description": {
+      "translate": "advancements.greenery.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mooseblock:satin_leaves"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.greenery.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

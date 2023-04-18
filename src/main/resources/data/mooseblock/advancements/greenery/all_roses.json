@@ -1,0 +1,190 @@
+{
+  "parent": "mooseblock:greenery/root",
+  "criteria": {
+    "red": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:red_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "orange": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:orange_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "yellow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:yellow_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "green": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:ill_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cyan": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:cyan_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blue": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:blue_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pink": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:pink_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "purple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:purple_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "rainbow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:rainbow_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "black": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:black_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "white": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:white_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.greenery.all_roses.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "mooseblock:purple_rose"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.greenery.all_roses.title"
+    }
+  },
+  "requirements": [
+    [
+      "red"
+    ],
+    [
+      "orange"
+    ],
+    [
+      "yellow"
+    ],
+    [
+      "green"
+    ],
+    [
+      "cyan"
+    ],
+    [
+      "blue"
+    ],
+    [
+      "pink"
+    ],
+    [
+      "purple"
+    ],
+    [
+      "rainbow"
+    ],
+    [
+      "black"
+    ],
+    [
+      "white"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

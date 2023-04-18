@@ -19,6 +19,11 @@ public class ModLootTableModifiers {
     private static final Identifier SHIPWRECK_SUPPLY_ID
             =new Identifier("minecraft", "chests/shipwreck_supply");
 
+    private static final Identifier IGLOO_CHEST_ID
+            =new Identifier("minecraft","chests/igloo_chest");
+
+
+
     public static void modifyLootTableModifiers() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 
@@ -39,6 +44,16 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
+// add for frost enchant
+        //    if(IGLOO_CHEST_ID.equals(id)) {
+        //        LootPool.Builder poolBuilder = LootPool.builder()
+        //                .rolls(ConstantLootNumberProvider.create(1))
+        //                .conditionally(RandomChanceLootCondition.builder(0.5f))
+        //                .with(ItemEntry.)
+        //                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build());
+        //        tableBuilder.pool(poolBuilder.build());
+        //        ItemStack itemStack = EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(ModEnchantments.FROST, 3));
+        //    }
         });
     }
 }

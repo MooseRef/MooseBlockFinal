@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "conditions": {},
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "mooseblock:textures/block/moosite_ore.png",
+    "description": {
+      "translate": "advancements.metals.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mooseblock:moosite"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.metals.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ]
+}

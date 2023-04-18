@@ -59,7 +59,7 @@ public class ModItems {
 
     public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(1f).build())));
-    public static final Item GOLDEN_TOMATO = registerItem("golden_tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(4).saturationModifier(1.2f).statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 1200,0),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 200,0),1.0f).build())));
+    public static final Item GOLDEN_TOMATO = registerItem("golden_tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(4).saturationModifier(1.2f).statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 200,0),1.0f).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1200,0),1.0f).alwaysEdible().build())));
     public static final Item ROTTEN_TOMATO = registerItem("rotten_tomato", new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3f).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 60,0),0.6f).build())));
     public static final Item TOMATO_SOUP = registerItem("tomato_soup", new StewItem(new FabricItemSettings().food(new FoodComponent.Builder().hunger(12).saturationModifier(1f).build()).maxCount(1)));
 

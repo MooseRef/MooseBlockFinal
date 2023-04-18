@@ -1,6 +1,8 @@
 package net.moose.mooseblock.world.feature;
 
+
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -17,7 +19,6 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.moose.mooseblock.block.ModBlocks;
 import net.moose.mooseblock.mooseblock;
-import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
 
 import java.util.List;
 
@@ -30,6 +31,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MOOSITE_KEY = registerKey("moosite_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GNEISS_KEY = registerKey("gneiss");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> STRAWBERRY_BUSH_KEY = registerKey("strawberry_bush");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLACK_ROSE_KEY = registerKey("black_rose");
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_ROSE_KEY = registerKey("white_rose");
@@ -87,6 +90,11 @@ public class ModConfiguredFeatures {
         register(context, MOOSITE_KEY, Feature.ORE, new OreFeatureConfig(overworldMoosite, 3));
 
         register(context, GNEISS_KEY, Feature.ORE, new OreFeatureConfig(overworldGneiss, 12));
+
+        register(context, STRAWBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.STRAWBERRY_BUSH
+                                .getDefaultState().with(SweetBerryBushBlock.AGE,3))))));
 
         register(context, BLACK_ROSE_KEY, Feature.FLOWER,
                 ConfiguredFeatures.createRandomPatchFeatureConfig(32, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,

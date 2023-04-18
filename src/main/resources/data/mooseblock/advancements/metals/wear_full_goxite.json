@@ -1,0 +1,53 @@
+{
+  "parent": "mooseblock:metals/get_goxite",
+  "criteria": {
+    "goxite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:goxite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "mooseblock:goxite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "mooseblock:goxite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "mooseblock:goxite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.metals.goxite_armor.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mooseblock:goxite_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.metals.goxite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "goxite_armor"
+    ]
+  ]
+}

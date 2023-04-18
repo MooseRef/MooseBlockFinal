@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "mooseblock:borpite"
+    },
+    "title": {
+      "translate": "advancements.metals.borpite.title"
+    },
+    "description": {
+      "translate": "advancements.metals.borpite.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "mooseblock:metals/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mooseblock:borpite"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

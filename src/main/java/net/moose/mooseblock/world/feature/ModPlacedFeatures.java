@@ -23,6 +23,8 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> GNEISS_PLACED_KEY = registerKey("gneiss_placed");
 
+    public static final RegistryKey<PlacedFeature> STRAWBERRY_BUSH_PLACED_KEY = registerKey("strawberry_bush_placed");
+
     public static final RegistryKey<PlacedFeature> BLACK_ROSE_PLACED_KEY = registerKey("black_rose_placed");
     public static final RegistryKey<PlacedFeature> WHITE_ROSE_PLACED_KEY = registerKey("white_rose_placed");
     public static final RegistryKey<PlacedFeature> RED_ROSE_PLACED_KEY = registerKey("red_rose_placed");
@@ -58,6 +60,10 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(3,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-20),YOffset.fixed(60))));
 
+
+        register(context, STRAWBERRY_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.STRAWBERRY_BUSH_KEY),
+                RarityFilterPlacementModifier.of(10),SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                BiomePlacementModifier.of());
 
 
         register(context, BLACK_ROSE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLACK_ROSE_KEY),

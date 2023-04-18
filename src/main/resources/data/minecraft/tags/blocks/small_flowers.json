@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mooseblock:red_rose",
+    "mooseblock:orange_rose",
+    "mooseblock:yellow_rose",
+    "mooseblock:ill_rose",
+    "mooseblock:cyan_rose",
+    "mooseblock:blue_rose",
+    "mooseblock:pink_rose",
+    "mooseblock:purple_rose",
+    "mooseblock:rainbow_rose",
+    "mooseblock:black_rose",
+    "mooseblock:white_rose"
+  ]
+}
